@@ -7,29 +7,31 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- menu de navegação -->
+  <!-- nav -->
     <nav class="nav">
-        <img src="./img/bars-solid.svg" alt="">
-        <h1>Segurança Alimentar</h1>
+      <img class="icones" src="./img/bars-solid.svg" alt="">
+      <h1>Segurança Alimentar</h1>
     </nav>
 
     <!-- inicio do main -->
-    <section id="carousel">
-        <h1>Restaurantes populares </h1>
-        <img src="./img/building-solid.svg" alt="">
+    <section id="section1">
+      <div class="div-section1">
+        <img class="icones " src="./img/building-solid.svg" alt="">
+        <h1 style="font-size: 18px;">Restaurantes populares </h1>
+      </div>
         <div class="carousel">
             <input type="radio" name="carousel" id="slide1" checked>
             <input type="radio" name="carousel" id="slide2">
             <input type="radio" name="carousel" id="slide3">
             <div class="slides">
               <div class="slide">
-                <img src="" alt="Slide 1">
+                <img src="https://4.bp.blogspot.com/-1cFylbwcTtE/UqMkUV_5-yI/AAAAAAAAF8w/OE8QEo8B1MY/s1600/PAISAGENS.jpg" alt="Slide 1">
               </div>
               <div class="slide">
-                <img src="" alt="Slide 2">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.f8Q_uYPmzEKHFzw8ecL09wHaFj&pid=Api&P=0&h=180" alt="Slide 2">
               </div>
               <div class="slide">
-                <img src="" alt="Slide 3">
+                <img src="https://ciclovivo.com.br/wp-content/uploads/2018/09/iStock-881903436.jpg" alt="Slide 3">
               </div>
             </div>
             <div class="navigation">
@@ -40,32 +42,65 @@
           </div>
     </section>
 
-    <section id="SAN">
-        <h1>Segurança Alimentar e Nutricional </h1>
-        <h3>Qualidade de vida através da alimentação saudável</h3>
-        <p>A realização do direito de todos ao acesso regular e permanente a alimentos de qualidade. em quantidade suficiente,sem comprometer b acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde, que respeitem a diversidade cultural e que sejam social, econômica e ambientalmente sustentaveis</p>
-        <button>Ver mais <img src="./img/arrow-right-solid.svg" alt=""></button>
+    <section id="section2">
+        <h1 class="titulo-section2">Segurança Alimentar e Nutricional </h1>
+        <h3 class="frase-section2">"Qualidade de vida através da alimentação saudável"</h3>
+        <p class="texto-section2">A realização do direito de todos ao acesso regular e permanente a alimentos de qualidade. em quantidade suficiente,sem comprometer b acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde, que respeitem a diversidade cultural e que sejam social, econômica e ambientalmente sustentaveis</p>
+        <a class="button-section2" href="#">ver mais<img class="icones" src="./img/arrow-right-solid.svg" alt=""></a>       
     </section>
 
-    <section id="contato">
-        <h2>entre em contato</h2>
-        <img src="./img/whatsapp.svg" alt="">
-        <h3>(99) 99999-9999</h3>
-        <img src="./img/whatsapp.svg" alt="">
-        <h3>(99) 99999-9999</h3>
-        <img src="./img/envelope-solid.svg" alt="">
-        <h3>gustavo@gmail.com</h3>
-        <img src="./img/location-dot-solid.svg" alt="">
-        <h3>rua Lorem ipsum, 250, toledo, PR</h3>
+    <section id="section3">
+      <div class="div-section3">
+        <h2 class="titulo-section3">entre em contato</h2>
+
+        <div class="div-contatos">
+
+        <div class="div-contatos01">
+        <img class="icones" src="./img/whatsapp.svg" alt="">
+        <p>(99) 99999-9999</p>
+        </div>
+
+        <div class="div-contatos02">
+        <img class="icones" src="./img/whatsapp.svg" alt="">
+        <p>(99) 99999-9999</p><br>
+        </div>
+
+        <div class="div-contatos03">
+        <img class="icones" src="./img/envelope-solid.svg" alt="">
+        <p>gustavo@gmail.com</p><br>
+        </div>
+
+        <div class="div-contatos04">
+        <img class="icones" src="./img/location-dot-solid.svg" alt="">
+        <p>rua Lorem ipsum, 250, toledo, PR</p><br>
+        </div>
+
+         </div>
+      </div>
     </section>
 
     <!-- INICIO RODAPE -->
-     <footer>
+     <footer class="footer">
         <h3>
-            Segurança Alimentar
+            Segurança <br> Alimentar
           </h3>
-          <p>Todos direitos reservados!</p>
-          <p>desenvolvido por - grupo 6 - turma B - engenharia de software</p>
-     </footer>
+          <div class="departamentos-footer">
+            <div class="div-dentro-departamento">
+          <p>Cozinha Social</p>
+          <p>Educação Alimentar</p>
+          <p>Panificadora Social</p>
+          <p>Restaurantes</p>
+          <p>Restrição Alimentar</p>
+            </div>
+            <div class="div-dentro-departamento">
+          <p>Agricultura familiar</p>
+          <p>Alimentação Escolar</p>
+          <p>Banco de Alimentos</p>
+          <p>Casas Abrigo</p>
+          <p>COMSEA</p>
+            </div>
+        </div>
+          <p class="desenvolvido-por">Desenvolvido por <br> Grupo 6 - Turma B - Engenharia de Software</p>
+        </footer>
 </body>
 </html>
