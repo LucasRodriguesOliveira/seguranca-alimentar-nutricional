@@ -4,12 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-}
-
-.nav{
+/* .nav{
   background-color: #517352;
   height: 67px;
   width: 100%;
@@ -119,7 +114,125 @@ body{
   background-color:#517352;
   margin: 10px;
   padding: 10px;
-  color: #fff;
+  color: #fff; */
+:root {
+  --primary: #517352;
+  --cal-poly-green: #517352;
+  --cal-poly-green-dark: #175919;
+  --cal-poly-green-light: #7D9E7E;
+  --text-color: #1E1E24;
+  --background-primary: #EEF0F0;
+  --background-secondary: #F3F3F3;
+  --seal-brown: #5A1F0C;
+  --vermillion: #F64740;
+  --honolulu-blue: #007CBE;
+
+  --p0: 0px;
+  --p1: 2px;
+  --p2: 4px;
+  --p3: 6px;
+  --p4: 8px;
+  --p5: 10px;
+  --p6: 12px;
+  --p7: 14px;
+  --p8: 16px;
+  --p9: 18px;
+  --p10: 20px;
+  --p11: 22px;
+  --p12: 24px;
+  --p13: 26px;
+  --p14: 28px;
+  --p15: 30px;
+  --p16: 32px;
+  --p17: 34px;
+  --p18: 36px;
+  --p19: 38px;
+  --p20: 40px;
+}
+
+body {
+  font-size: var(--p8);
+  font-weight: normal;
+  color: var(--text-color);
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav#toolbar {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--p10);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: var(--p8) var(--p12);
+  box-shadow: 1px 1px 3px rgba(0 0 0 / .15),
+              3px 3px 6px rgba(0 0 0 / .2);
+}
+
+nav#toolbar label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--p15);
+  color: var(--background-primary);
+  padding: var(--p2);
+}
+
+nav#sidebar {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 0;
+  height: 100dvh;
+  transition: all 0.4s ease-out;
+}
+
+
+input#menu-checkbox:checked ~ nav#sidebar {
+  display: block;
+}
+
+nav#sidebar {
+  transition: all 0.4s ease-out;
+  width: 70%;
+  background-color: var(--background-primary);
+  box-shadow: 1px 0 3px rgba(0 0 0 / .15),
+              3px 0 6px rgba(0 0 0 / .2);
+  transition: all 0.4s ease-out;
+}
+
+nav#sidebar div.sidebar-close-button {
+  display: none;
+}
+
+nav#sidebar.active div.sidebar-close-button {
+  display: block;
+  padding: var(--p4);
+  position: absolute;
+  top: 16px;
+  right: -30%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  color: var(--background-secondary);
+  font-size: var(--p12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgba(0 0 0 / .15),
+              3px 3px 6px rgba(0 0 0 / .2);
+  cursor: pointer;
+}
+
+.font-app-name {
+  font-family: 'MuseoModerno', sans-serif;
+  font-weight: bold;
+  font-size: var(--p12);
+  color: var(--background-primary);
 }
 
 .div-contatos{
