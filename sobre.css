@@ -1,0 +1,232 @@
+
+/* SOBRE */
+
+/* Estilo padrão para todos os dispositivos */
+.menu_nav {
+    background-color: #517352;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #EEF0F0;
+}
+
+.grafico_sobre {
+    display: flex;
+    border: 10px solid #517352;
+    border-radius: 3px;
+    max-width: 90%;
+    width: 90%;
+    margin: 30px auto;
+    height: 50vh;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: 'MuseoModerno';
+    font-size: 2rem;
+    color: #EEF0F0;
+}
+
+.retirar-encima{
+    margin-top: 0px;
+}
+.titulo_sobre {
+    color: #175919;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.texto_sobre {
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    margin: 10px;
+    text-align: justify;
+}
+
+.legenda_grafico_sobre {
+    color: #517352;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.875rem;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+
+/* Estilos para dispositivos com largura máxima de 450px */
+@media (max-width: 450px) {
+    .retirada_pc {
+        display: none;
+    }
+
+    .grafico_sobre {
+        width: 100%;
+        height: 150px;
+        margin-top: 10px;
+        border: 5px solid #517352;
+        border-radius: 3px;
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        
+    }
+
+    .retirar-encima{
+        margin-top: 0px;
+    }
+
+    .titulo_sobre {
+        margin-top: 60px;
+        padding-top: 0;
+    }
+
+    .texto_sobre {
+        font-size: 0.625rem;
+    }
+
+    .legenda_grafico_sobre {
+        font-size: 0.5rem;
+    }
+}
+
+/* Estilos para dispositivos com largura mínima de 600px e máxima de 1024px (tamanhos de tablet) */
+@media (min-width: 450px) and (max-width: 1024px) {
+    .menu_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .retirada_pc {
+        display: none;
+    }
+
+    .grafico_sobre {
+        width: 100%;
+        height: 40vh;
+        border: 5px solid #517352;
+        border-radius: 3px;
+        margin-bottom: 0px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .titulo_sobre {
+        margin-top: 40px;
+    
+    }
+    .retirar-encima{
+        margin-top: 0px;
+    }
+
+    .texto_sobre {
+        font-size: 0.875rem;
+        margin: 0 20px;
+    }
+
+    .legenda_grafico_sobre {
+        font-size: 0.75rem;
+        margin: 0 20px;
+    }
+
+    .foto_fundo {
+        height: 50px;
+    }
+}
+
+/* Estilos para dispositivos com largura mínima de 1025px */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .foto_fundo {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://www.jaalimentacao.com.br/wp-content/uploads/2021/05/Seguranca-alimentar-1.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #EEF0F0;
+        text-decoration: none;
+    }
+
+    .menu_nav {
+        padding: 10px;
+        justify-content: space-between;
+    }
+
+    .container_nav {
+        width: 300px;
+    }
+
+    .margem_titulo_nav {
+        margin: 10px 0 10px 80px;
+    }
+
+    .nav-search {
+        display: flex;
+    }
+    .retirar-encima{
+        margin-top: 0px;
+    }
+
+    .nav-search input[type="text"] {
+        padding: 10px;
+        margin: 30px;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        outline: none;
+        background-color: #517352;
+        border: 2px solid #EEF0F0;
+    }
+
+    .foto_fundo {
+        height: 150px;
+        margin-top: 0;
+    }
+
+    .titulo_sobre {
+        padding-top: 55px;
+        margin: 0px;
+    }
+
+    .texto_sobre {
+        margin: 30px 90px;
+        font-size: 1rem;
+    }
+
+    .grafico_sobre {
+        width: 90%;
+        margin: 5%;
+        height: 30%;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    .legenda_grafico_sobre {
+        font-size: 1rem;
+        margin: 0 90px;
+    }
+}
