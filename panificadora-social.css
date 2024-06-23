@@ -46,13 +46,6 @@
     text-decoration: none;
   }
 
-  .icones{
-    height: 40px;
-    width: 40px;
-  }
-
-
-
   main {
     padding: 20px;
     background-color: #f9f9f9;
@@ -101,7 +94,13 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    position: relative; /* Use relative for natural placement */
+    position: relative;
+}
+
+.icones{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
