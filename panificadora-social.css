@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  .nav{
+    background-color: #517352;
+    height: 67px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .nav h1{
+    position: absolute;
+    left: 90px;
+  }
+  
+  .lista_menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .lista_menu li {
+    margin: 0 10px;
+  }
+  
+  .lista_menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.introducao, .galeria, .contato {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #517352;
+    border-bottom: 2px solid #517352;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria .imagem {
+    flex: 1;
+    max-width: 48%;
+}
+
+.galeria .imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 8px;
+}
+
+footer {
+    background-color: #517352;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.icones{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .icones {
+        display: block;
+    }
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria .imagem {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    .galeria{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .row{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+
+
+
+  @media (max-width: 620px) {
+    .lista_menu {
+        display: none;
+    }
+    .nav h1{
+      position: absolute;
+      left: 90px;
+    }
+}
