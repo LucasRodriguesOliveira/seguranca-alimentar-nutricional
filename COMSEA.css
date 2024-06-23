@@ -53,7 +53,6 @@ body {
 }
 
 .icon_nav {
-    margin-top: 30px;
     color: #175919;
     font-size: 50px;
 }
@@ -232,7 +231,6 @@ footer {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 10px;
     left: 10px;
 }
 
@@ -268,39 +266,134 @@ footer {
     font-style: italic;
 }
 
+.text_footer {
+    position: absolute; /* Adicionando posição absoluta */
+    left: 90px;
+    color: white; /* Adicionando cor branca para garantir contraste */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 10px;
+}
+
+
 /* Media Queries */
 @media (max-width: 620px) {
+    .menu_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+    .titulo_nav{
+        margin-left: 40px;
+        margin-top: -38px;
+    }
     .lista_menu {
         display: none;
     }
+
     .nav h1 {
-        position: absolute;
-        left: 90px;
+        position: static;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-top: 20px;
+        width: auto;
     }
+
     .retirar {
         display: none;
     }
+
     h1 {
-        font-size: 1.25rem;
-        
+        font-size: 1.0rem;
     }
-    
+
+    .icon_nav {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+        text-align: left;
+    }
+    .footer-header {
+        flex-direction: column;
+    }
+
+    .footer-header .icon_nav {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
+
+    .galeria {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .galeria .imagem {
+        max-width: 100%;
+    }
+
+    .texto_sobre {
+        margin: 20px;
+    }
+
+    .unidade {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .unidade img {
+        max-width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
 
 @media (max-width: 1000px) {
     .icones {
         display: block;
     }
+
     .galeria {
         flex-direction: column;
     }
+
     .galeria .imagem {
         max-width: 100%;
     }
+
     .retirar {
         display: none;
     }
+
+    .menu_nav {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .lista_menu {
+        gap: 10px;
+    }
+
+    .footer-header {
+        flex-direction: column;
+    }
+
+    .footer-header .icon_nav {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
+
+    .icon_nav {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+        text-align: left;
+    }
+
 
 @media (min-width: 1000px) {
     .h2_titulo1 {
