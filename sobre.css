@@ -1,13 +1,56 @@
 
 /* SOBRE */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Estilo padrão para todos os dispositivos */
 .menu_nav {
     background-color: #517352;
+    height: 67px;
+    width: 100%;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    align-items: center;
+    gap: 30px;
     justify-content: space-between;
     padding: 10px;
-    color: #EEF0F0;
+    color: #fff;
+}
+
+.lista_menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista_menu li {
+    margin: 0 10px;
+}
+
+.lista_menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icones {
+    height: 40px;
+    width: 40px;
+}
+
+.ajuda a:hover {
+    background-color: #517352;
+}
+
+.icon_nav {
+    color: #175919;
+    font-size: 50px;
 }
 
 .grafico_sobre {
@@ -52,9 +95,93 @@ h1 {
     text-align: justify;
 }
 
+/* Footer */
+footer {
+    background-color: #5A1F0C;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+}
+
+.footer-icon i {
+    color: green;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-icon h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.footer-column {
+    margin-right: 20px;
+}
+
+.footer-reserved-rights, .footer-developed-by {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-developed-by {
+    font-style: italic;
+}
+
+.text_footer {
+    position: absolute; /* Adicionando posição absoluta */
+    left: 90px;
+    color: white; /* Adicionando cor branca para garantir contraste */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 10px;
+}
+
 
 /* Estilos para dispositivos com largura máxima de 450px */
-@media (max-width: 450px) {
+@media (max-width: 620px) {
+    .menu_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+    .titulo_nav{
+        margin-left: 40px;
+        margin-top: -38px;
+    }
+    .lista_menu {
+        display: none;
+    }
+
+    .nav h1 {
+        position: static;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-top: 20px;
+        width: auto;
+    }
+    .icon_nav {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+        text-align: left;
+    }
+
     .retirada_pc {
         display: none;
     }
