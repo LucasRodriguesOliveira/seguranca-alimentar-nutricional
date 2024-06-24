@@ -15,10 +15,12 @@
 </head>
 <body>
   <!-- nav -->
-    <nav class="nav">
-      <img class="icones " src="./img/bars-solid (1).svg" alt="">
+    <nav class="toolbar">
+      <div class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <h1>Segurança Alimentar</h1>
-       <ul class="lista_menu">
+       <ul class="menu-items">
         <li><a href="#">Home</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Contato</a></li>
@@ -26,58 +28,124 @@
     </nav>
 
     <!-- inicio do main -->
-    <section id="section1">
-      <div class="div-section1">
-        <img class="icones " src="./img/building-solid.svg" alt="">
-        <h1 style="font-size: 18px;">Restaurantes populares </h1>
+     <!-- Caroussel de restaurantes -->
+    <section class="restaurants">
+      <div class="header">
+        <i class="fa-solid fa-bowl-food"></i>
+        <h2>Restaurantes populares</h2>
       </div>
 
-      <div id="slider">
-        <figure>
-    <img src="./img/restaurante_paulista_001_3.jpg">
-    <img src="./img/WhatsApp_Image_20210729_at_13.01.09.jpeg">
-    <img src="./img/WhatsApp_Image_20210729_at_13.01.09_1.jpeg">
-    <img src="./img/whatsapp.svg">
-    <img src="./img/restaurante_paulista_001_3.jpg">
-
-        </figure>
-        </div>
+      <div class="caroussel-container">
+        <div class="caroussel-container-slideshow">
+          <!-- <button class="caroussel-button" id="left-caroussel-btn" disabled>
+            <i class="fa-solid fa-chevron-left"></i>
+          </button> -->
+          <div id="caroussel">
+            <div class="main-slide slide-animation">
+              <div class="slide" id="slide1">
+                <img src="./img/restaurante_paulista_001_3.jpg" alt="restaurante 1">
+                <div class="content">
+                  <div class="title">Jd. Paulista</div>
+                  <div class="details">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="address">
+                      <p class="street">Rua Lorem Ipsum</p>
+                      <p class="number">250</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide" id="slide2">
+                <img src="./img/WhatsApp_Image_20210729_at_13.01.09.jpeg" alt="restaurante 2">
+                <div class="content">
+                  <div class="title">Jd. Paulista</div>
+                  <div class="details">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="address">
+                      <p class="street">Rua Lorem Ipsum</p>
+                      <p class="number">250</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide" id="slide3">
+                <img src="./img/WhatsApp_Image_20210729_at_13.01.09_1.jpeg" alt="restaurante 3">
+                <div class="content">
+                  <div class="title">Jd. Paulista</div>
+                  <div class="details">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="address">
+                      <p class="street">Rua Lorem Ipsum</p>
+                      <p class="number">250</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide" id="slide4">
+                <img src="./img/restaurante_paulista_001_3.jpg" alt="restaurante 4">
+                <div class="content">
+                  <div class="title">Jd. Paulista</div>
+                  <div class="details">
+                    <div class="icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="address">
+                      <p class="street">Rua Lorem Ipsum</p>
+                      <p class="number">250</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <button class="caroussel-button" id="right-caroussel-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button> -->
+        </div>
+        <div class="caroussel-controls">
+          <div class="caroussel-loader"></div>
+          <div class="caroussel-preview"></div>
+        </div>
+      </div>
     </section>
 
-    <section id="section2">
-        <h1 class="titulo-section2">Segurança Alimentar e Nutricional </h1>
-        <h3 class="frase-section2">"Qualidade de vida através da alimentação saudável"</h3>
-        <p class="texto-section2">A realização do direito de todos ao acesso regular e permanente a alimentos de qualidade. em quantidade suficiente,sem comprometer b acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde, que respeitem a diversidade cultural e que sejam social, econômica e ambientalmente sustentaveis</p>
-        <a class="button-section2" href="#">Ver Mais<img class="icones" src="./img/arrow-right-solid (1).svg" alt=""></a>       
-      </section>
+    <section id="card-about">
+      <h1 class="title">Segurança Alimentar e Nutricional </h1>
+      <h2 class="quote">"Qualidade de vida através da alimentação saudável"</h2>
+      <p class="details">A realização do direito de todos ao acesso regular e permanente a alimentos de qualidade. em quantidade suficiente,sem comprometer b acesso a outras necessidades essenciais, tendo como base práticas alimentares promotoras de saúde, que respeitem a diversidade cultural e que sejam social, econômica e ambientalmente sustentaveis</p>
+      <a class="btn see-more" href="sobre.html">
+        Ver Mais
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
 
-    <section id="section3">
-      <div class="div-section3">
-        <h2 class="titulo-section3">entre em contato</h2>
-
-        <div class="div-contatos">
-
-        <div class="div-contatos01">
-        <img class="icones" src="./img/whatsapp.svg" alt="">
-        <p>(99) 99999-9999</p>
-        </div>
-
-        <div class="div-contatos02">
-        <img class="icones" src="./img/whatsapp.svg" alt="">
-        <p>(99) 99999-9999</p><br>
-        </div>
-
-        <div class="div-contatos03">
-        <img class="icones" src="./img/envelope-solid.svg" alt="">
-        <p>gustavo@gmail.com</p><br>
-        </div>
-
-        <div class="div-contatos04">
-        <img class="icones" src="./img/location-dot-solid.svg" alt="">
-        <p>rua Lorem ipsum, 250, toledo, PR</p><br>
-        </div>
-
-         </div>
+    <section id="contact">
+      <div class="card">
+        <h2 class="title">Entre em contato</h2>
+        <ul class="contacts-list">
+          <li class="contact-item whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>(99) 99999-9999</p>
+          </li>
+          <li class="contact-item whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p>(99) 99999-9999</p><br>
+          </li>
+          <li class="contact-item email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>email@somemail.com</p><br>
+          </li>
+          <li class="contact-item address">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Rua Lorem ipsum, 250, toledo, PR</p><br>
+          </li>
+        </ul>
       </div>
     </section>
 
