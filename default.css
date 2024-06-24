@@ -29,3 +29,25 @@ body {
   color: var(--text-primary);
   background-color: var(--background-secondary);
 }
+
+.link {
+  text-decoration: none;
+  color: var(--honolulu-blue);
+  font-size: 1.05rem;
+  font-weight: 500;
+  font-family: 'MuseoModerno', sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 212, 245) 0%,
+    rgba(135, 138, 245) 50%,
+    rgba(82, 82, 245) 100%
+  );
+  background-size: 0% 3px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background .4s ease-out;
+}
+
+.link:hover {
+    background-size: 100% 3px;
+}
