@@ -4,26 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDUCAÇÃO ALIMENTAR</title>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <title>Segurança Alimentar | Educação Alimentar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./topbar.css">
+    <link rel="stylesheet" href="./sidebar.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./educacao-alimentar.css">
-    <script src="https://kit.fontawesome.com/d732cad52a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header class="home_header">
-    </header>
-
-    <nav class="menu_nav">
-        <i class="fa-solid fa-bars icon_meio_nav tamanho_icons"></i>
-        <h1 class="margem_titulo_nav titulo_nav">SEGURANÇA ALIMENTAR</h1>
-        <ul class="lista_menu retirar">
-            <li></i><a href="index.html">Home</a></li>
-            <li></i><a href="sobre.html">Sobre</a></li>
-            <li></i><a href="">Contato</a></li>
-        </ul>
-    </nav>
+  <!-- nav -->
+  <nav class="toolbar">
+    <div class="icon">
+      <label for="sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </div>
+    <h1>Segurança Alimentar</h1>
+      <ul class="menu-items">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <input type="checkbox" name="sidebar" id="sidebar" hidden>
+  <div class="sidebar">
+    <label for="sidebar" class="close-btn btn">
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+    <div class="header">
+      <div class="logo">
+        <i class="fa-solid fa-shapes"></i>
+      </div>
+      <div class="title">Menu</div>
+    </div>
+    <ul class="main-items">
+      <li class="active">
+        <a href="#">
+          <div class="logo">
+            <i class="fa-solid fa-house"></i>
+          </div>
+          <div class="label">Inicio</div>
+        </a>
+      </li>
+      <li>
+        <a href="sobre.html">
+          <div class="logo">
+            <i class="fa-solid fa-info"></i>
+          </div>
+          <div class="label">Sobre</div>
+        </a>
+      </li>
+      <li>
+        <a href="#contact">
+          <div class="logo">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="label">Contato</div>
+        </a>
+      </li>
+    </ul>
+    <div class="divider"></div>
+    <ul class="departments-list">
+      <li>
+        <a href="agricultura_familiar.html">
+          <div class="logo">
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <div class="label">
+            Agricultura Familiar
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="alimentacao_escolar.html">
+          <div class="logo">
+            <i class="fa-solid fa-apple-whole"></i>
+          </div>
+          <div class="label">
+            Alimentação Escolar
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="banco_alimentos.html">
+          <div class="logo">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <div class="label">
+            Banco de Alimentos
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="casas_abrigo.html">
+          <div class="logo">
+            <i class="fa-solid fa-person-shelter"></i>
+          </div>
+          <div class="label">
+            Casas Abrigo
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="COMSEA.html">
+          <div class="logo">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="label">
+            COMSEA
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="cozinha-social.html">
+          <div class="logo">
+            <i class="fa-solid fa-drumstick-bite"></i>
+          </div>
+          <div class="label">
+            Cozinha Social
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="educacao-alimentar.html">
+          <div class="logo">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <div class="label">
+            Educação Alimentar
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="panificadora-social.html">
+          <div class="logo">
+            <i class="fa-solid fa-bread-slice"></i>
+          </div>
+          <div class="label">
+            Panificadora Social
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="restaurantes.html">
+          <div class="logo">
+            <i class="fa-solid fa-people-roof"></i>
+          </div>
+          <div class="label">
+            Restaurantes
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="CAISAN.html">
+          <div class="logo">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+          <div class="label">
+            CAISAN
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
 
     <main>
         <section>
@@ -89,30 +239,43 @@
                 </section>
             </section>
         </div>
-        <footer>
-            <div>
-                <i class="fa-solid fa-leaf icon_nav"></i>
-                <h3 class="text_footer">Segurança Alimentar</h3>
-            </div>
-            <div class="footer-columns">
-                <div class="footer-column">
-                    <p class="margin_footer">Agricultura Familiar</p>
-                    <p class="margin_footer">Alimentação Escolar</p>
-                    <p class="margin_footer">Banco de Alimentos</p>
-                    <p class="margin_footer">Casas Abrigo</p>
-                    <p class="margin_footer">COMSEA</p>
-                </div>
-                <div class="footer-column">
-                    <p>Cozinha Social</p>
-                    <p>Educação Alimentar</p>
-                    <p>Panificadora Social</p>
-                    <p>Restaurantes</p>
-                    <p>Restrição Alimentar</p>
-                </div>
-            </div>
-            <p class="footer-reserved-rights">Todos direitos reservados!</p>
-            <p class="footer-developed-by">Desenvolvido por Grupo 6 - Turma B - Engenharia de Software</p>
-        </footer>
-</body>
 
+  <!-- INICIO RODAPE -->
+  <footer>
+    <div class="information">
+      <div class="logo">
+        <div class="icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="title">
+          Segurança Alimentar
+        </div>
+      </div>
+      <div class="departments-container">
+        <div class="departments-list">
+          <p>Cozinha Social</p>
+          <p>Educação Alimentar</p>
+          <p>Panificadora Social</p>
+          <p>Restaurantes</p>
+          <p>Restrição Alimentar</p>
+        </div>
+        <div class="departments-list">
+          <p>Agricultura familiar</p>
+          <p>Alimentação Escolar</p>
+          <p>Banco de Alimentos</p>
+          <p>Casas Abrigo</p>
+          <p>COMSEA</p>
+          <p>CAISAN</p>
+        </div>
+      </div>
+    </div>
+    <div class="developed-by">
+      <div class="label">Desenvolvido por</div>
+      <div class="who">
+        <div class="group">Grupo 6 - Turma B</div>
+        <div class="degree">Engenharia de Software</div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
