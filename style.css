@@ -11,11 +11,7 @@ section.restaurants .header {
   padding-bottom: 20px;
 }
 
-section.restaurants .header i {
-  font-size: 1.5rem;
-}
-
-section.restaurants .header h2 {
+section.restaurants .header :is(i, h2) {
   font-size: 1.5rem;
 }
 
@@ -280,6 +276,13 @@ section#card-about .see-more {
   right: 5%;
   box-shadow: 1px 1px 3px rgba(0 0 0 / .15),
               3px 3px 6px rgba(0 0 0 / .25);
+  transition: all .4s ease-out;
+}
+
+section#card-about .see-more:hover {
+  background-color: var(--primary-dark-2);
+  box-shadow: 1px 1px 1px rgba(0 0 0 / .2),
+              3px 3px 3px rgba(0 0 0 / .3);
 }
 
 section#contact {
@@ -338,4 +341,125 @@ section#contact .card .contacts-list {
 
 .contact-item.address i {
   color: var(--vermillion);
+}
+
+@media only screen and (min-width: 660px) {
+  section.restaurants {
+    padding: 8px;
+  }
+
+  section.restaurants .header :is(i, h2) {
+    font-size: 1.8rem;
+  }
+
+  #caroussel, .slide {
+    height: 240px;
+    width: 360px;
+  }
+
+  .main-slide {
+    width: 1440px;
+  }
+
+  section#card-about {
+    padding: 0;
+    padding-bottom: 40px;
+    margin-top: 12px;
+  }
+
+  section#card-about .title {
+    padding: 24px 20px;
+    padding-left: 24px;
+    font-size: 1.4rem;
+    border-radius: 0;
+  }
+
+  section#card-about .quote {
+    width: 100%;
+    font-size: .9rem;
+  }
+
+  section#card-about .details {
+    margin: 8px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+
+  section#card-about .see-more {
+    bottom: unset;
+    right: 3%;
+    top: 16px;
+    box-shadow: unset;
+    background-color: unset;
+    outline: 3px solid var(--background-primary);
+    outline-offset: 2px;
+  }
+
+  section#card-about .see-more:hover {
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    outline-color: var(--primary);
+  }
+
+  section#contact {
+    margin-top: 24px;
+  }
+
+  section#contact .card {
+    width: 75%;
+    margin: 0 auto;
+    padding: 8px;
+  }
+
+  section#contact .card .contacts-list {
+    gap: 24px
+  }
+
+  @keyframes slide {
+    20% {transform: translateX(0);}
+    30% {transform: translateX(-360px);}
+    50% {transform: translateX(-360px);}
+    60% {transform: translateX(-720px);}
+    70% {transform: translateX(-720px);}
+    80% {transform: translateX(-1080px);}
+    90% {transform: translateX(-1080px);}
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  section#card-about .details {
+    margin: 16px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #caroussel, .slide {
+    height: 300px;
+    width: 500px;
+  }
+
+  .main-slide {
+    width: 2000px;
+  }
+
+  section#card-about .details {
+    margin: 8px auto;
+    width: 75%;
+  }
+
+  section#contact .card {
+    width: 60%;
+    margin: 0 auto;
+    padding: 12px;
+  }
+
+  @keyframes slide {
+    20% {transform: translateX(0);}
+    30% {transform: translateX(-500px);}
+    50% {transform: translateX(-500px);}
+    60% {transform: translateX(-1000px);}
+    70% {transform: translateX(-1000px);}
+    80% {transform: translateX(-1500px);}
+    90% {transform: translateX(-1500px);}
+  }
 }
