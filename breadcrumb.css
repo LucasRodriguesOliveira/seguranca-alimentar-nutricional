@@ -1,0 +1,36 @@
+ul.breadcrumb {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  padding: 10px 14px;
+  margin-left: 10px;
+  margin-top: 4px;
+  font-size: 1.05rem;
+}
+
+ul.breadcrumb a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+ul.breadcrumb li span {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+ul.breadcrumb li:not(:first-child) {
+  position: relative;
+  margin-left: 1.5%;
+}
+
+ul.breadcrumb li:not(:first-child)::before {
+  content: '|';
+  left: -25%;
+  position: absolute;
+}
