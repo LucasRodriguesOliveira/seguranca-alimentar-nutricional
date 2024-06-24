@@ -1,0 +1,488 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F3F3;
+}
+
+/* Navigation */
+.menu_nav {
+    background-color: #517352;
+    height: 67px;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+}
+
+.lista_menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista_menu li {
+    margin: 0 10px;
+}
+
+.lista_menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.icones {
+    height: 40px;
+    width: 40px;
+}
+
+.ajuda a:hover {
+    background-color: #517352;
+}
+
+.icon_nav {
+    color: #175919;
+    font-size: 50px;
+}
+
+/* Text Content */
+.texto_sobre {
+    margin: 30px 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+h1 {
+    font-family: 'MuseoModerno';
+    font-size: 2rem;
+    color: #EEF0F0;
+}
+
+h2 {
+    color: #517352;
+    border-bottom: 2px solid #517352;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Images */
+.img_COMSEA {
+    display: flex;
+    border-radius: 3px;
+    max-width: 90%;
+    width: 90%;
+    margin: 30px auto;
+    height: 50vh;
+}
+
+/* Icons */
+.tamanho_icons {
+    font-size: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EEF0F0;
+    background-color: #1E1E24;
+    padding: 37px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    top: -30px;
+    left: 50%;
+    z-index: 0;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.introducao, .unidades, .acesso {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.unidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.unidade img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 250px;
+    border-radius: 8px;
+}
+
+.unidade ul {
+    flex: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.unidade ul li {
+    margin-bottom: 10px;
+}
+
+.introducao, .acesso {
+    line-height: 1.6;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.galeria .imagem {
+    flex: 1;
+    max-width: 48%;
+}
+
+.galeria .imagem img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 8px;
+}
+
+/* Dropdown */
+.dropdown {
+    margin: 10px 0;
+    width: 500px;
+}
+
+.dropdown input {
+    display: none;
+}
+
+.dropbtn {
+    background-color: #7D9E7E;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #7D9E7E;
+}
+
+.dropdown input:checked ~ .dropdown-content {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #5A1F0C;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10px;
+}
+
+.footer-icon i {
+    color: green;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-icon h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.footer-column {
+    margin-right: 20px;
+}
+
+.footer-reserved-rights, .footer-developed-by {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-developed-by {
+    font-style: italic;
+}
+
+.text_footer {
+    position: absolute; /* Adicionando posição absoluta */
+    left: 90px;
+    color: white; /* Adicionando cor branca para garantir contraste */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-bottom: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width: 620px) {
+    .menu_nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto;
+    }
+    .titulo_nav{
+        margin-left: 40px;
+        margin-top: -38px;
+    }
+    .lista_menu {
+        display: none;
+    }
+
+    .nav h1 {
+        position: static;
+        font-size: 1.4rem;
+        text-align: left;
+        margin-top: 20px;
+        width: auto;
+    }
+
+    .retirar {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.0rem;
+    }
+
+    .icon_nav {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+        text-align: left;
+    }
+    .footer-header {
+        flex-direction: column;
+    }
+
+    .footer-header .icon_nav {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+    .galeria {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .galeria .imagem {
+        max-width: 100%;
+    }
+
+    .texto_sobre {
+        margin: 20px;
+    }
+
+    .unidade {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .unidade img {
+        max-width: 100%;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+@media (max-width: 1000px) {
+    .icones {
+        display: block;
+    }
+
+    .galeria {
+        flex-direction: column;
+    }
+
+    .galeria .imagem {
+        max-width: 100%;
+    }
+
+    .retirar {
+        display: none;
+    }
+
+    .menu_nav {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .lista_menu {
+        gap: 10px;
+    }
+
+    .footer-header {
+        flex-direction: column;
+    }
+
+    .footer-header .icon_nav {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+    .icon_nav {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 40px;
+        text-align: left;
+    }
+
+
+@media (min-width: 1000px) {
+    .h2_titulo1 {
+        font-family: 'MuseoModerno';
+        font-size: 2rem;
+        color: #EEF0F0;
+    }
+    .galeria {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .row {
+        display: flex;
+        gap: 20px;
+    }
+    .h2_titulo1 {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4rem;
+        border-bottom: 0 solid #517352;
+    }
+    .h2_titulo {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.4rem;
+        color: #1E1E24;
+    }
+    .ajustes_sobre {
+        margin-left: 50.4%;
+        margin-top: 70px;
+    }
+    .foto_fundo {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://social.rs.gov.br/upload/recortes/202303/24185520_103455_GD.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 220px;
+        margin-top: 0;
+        margin-bottom: 0;
+        z-index: -1;
+    }
+    .icon_meio_nav {
+        margin-top: 10px;
+    }
+    .retirar_top {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 200px;
+    }
+    .fundo_titulo {
+        color: #EEF0F0;
+        background-color: #1E1E24;
+        margin-top: 0;
+        height: 60px;
+    }
+    .titulo_principal {
+        margin-top: 0;
+        line-height: 65px;
+        margin-left: 50%;
+        position: relative;
+    }
+    .top_0 {
+        margin-top: 0;
+    }
+    .div_opcoes {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 120px;
+        justify-content: center;
+    }
+    .ul_opcoes {
+        display: inline;
+        margin-right: 20px;
+    }
+    .a_opcoes {
+        color: #1E1E24;
+        text-decoration: none;
+        border: 2px solid #1E1E24;
+        padding: 2px 100px;
+    }
+    .a_opcoes:hover {
+        background-color: #517352;
+        color: white;
+    }
+    .texto_sobre {
+        margin: 30px 90px;
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
