@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco de Alimentos</title>
+    <title>Segurança Alimentar | Banco de Alimentos</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./topbar.css">
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./breadcrumb.css">
+    <link rel="stylesheet" href="./department.css">
 </head>
 <body>
   <!-- nav -->
@@ -155,7 +156,7 @@
       <li>
         <a href="restaurantes.html">
           <div class="logo">
-            <i class="fa-solid fa-people-roof"></i>
+            <i class="fa-solid fa-utensils"></i>
           </div>
           <div class="label">
             Restaurantes
@@ -175,80 +176,106 @@
     </ul>
   </div>
 
-    <main>
-        <section>
-            <div class="foto_fundo">
-                <h1 class="retirar_top retirar">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</h1>
-                <div class="retirar">
-                    <i class="fa-solid fa-truck icons"></i>
-                </div>
-            </div>
-            <div class="fundo_titulo">
-                <h2 class="titulo_principal h2_titulo1">Banco de Alimentos</h2>
-            </div>
-            <div>
-                <ul class="div_opcoes">
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#sobre_ba">Sobre</a></li>
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#galeria">Galeria</a></li>
-                </ul>
-            </div>
-        </section>
+  <ul class="breadcrumb">
+    <li>
+      <a class="return-btn link" href="index.html">
+        <i class="fa-solid fa-chevron-left"></i>
+        Inicio
+      </a>
+    </li>
+    <li>
+      <span>Banco de Alimentos</span>
+    </li>
+  </ul>
 
-        </section>
-        <section class="introducao">
-            <h2 id="sobre_ba">O que é?</h2>
-            <p class="texto_sobre">O Banco de Alimentos é um equipamento da Política de Segurança Alimentar e
-                Nutricional que atua na redução do desperdício de alimentos ao mesmo tempo em que proporciona suporte
-                alimentar para comunidades vulneráveis. Sua finalidade primordial é aproveitar excedentes alimentares
-                que, de outra forma, poderiam ser descartados, e distribuí-los para instituições de caridade,
-                organizações não governamentais e programas sociais que atendem pessoas em situação de vulnerabilidade.
-            </p>
-            <p class="texto_sobre">O funcionamento do Banco de Alimentos é baseado em uma rede eficiente de coleta,
-                armazenamento e distribuição. Empresas agrícolas, produtores, supermercados e outros doadores contribuem
-                com alimentos que, embora ainda próprios para consumo, podem estar próximos da data de vencimento ou
-                apresentar pequenas imperfeições estéticas que os tornariam indesejados no mercado convencional. Esses
-                alimentos são cuidadosamente inspecionados para garantir sua qualidade e segurança antes de serem
-                redistribuídos.</p>
-            <p class="texto_sobre">O Banco de Alimentos de Toledo conta com uma unidade de recebimento em que os
-                alimentos são selecionados e destinados conforme possibilidade e uma unidade de processamento onde são
-                produzidas polpas, geleias e outros minimamente processados. </p>
-            <p class="texto_sobre">Por fim, um destaque é o processo de desidratação dos alimentos, que facilita a
-                armazenagem, além de manter a qualidade nutricional. Além disso, o Banco de Alimentos conta com o espaço
-                da Cozinha Escola, que promove a educação alimentar e nutricional, fazendo com que a população atendida
-                conheça e pratique a produção de alimentos mais saudáveis. Esse espaço é também utilizado para cursos
-                profissionalizantes, que futuramente poderão se refletir na geração de renda aos participantes.</p>
-        </section>
-
-        <section class="introducao">
-            <h2>Quem pode acessar?</h2>
-            <p class="texto_sobre">O Banco de Alimentos beneficia pessoas em vulnerabilidade social por meio de
-                entidades e projetos, tais como: hospitais, asilos, casas de recuperação, entidades socioassistenciais,
-                casas lares, entre outros que atendam pessoas em estado de insegurança alimentar e nutricional e
-                famílias em vulnerabilidade social.</p>
-        </section>
-
-
-        <section id="galeria" class="galeria">
-            <h1 class="titulo_galeria">Galeria</h1>
-
-            <section class="borda_slider">
-                <div id="slider">
-                    <figure>
-                        <img src="./img_banco_alimentos/banco_de_alimentos_020424_foto_fabio_ulsenheimer.jpg">
-                        <img src="./img_banco_alimentos/banco_de_alimentos_inauguracao_dielson_pickler_0.jpg">
-                        <img src="./img_banco_alimentos/inauguracao_do_banco_de_alimentos_carlos_rodrigues_12.jpg">
-                        <img src="./img_banco_alimentos/inauguracao_do_banco_de_alimentos_carlos_rodrigues_21.jpg">
-                    </figure>
-                </div>
-            </section>
-        </section>
+  <main>
+    <header class="department">
+      <div class="icon">
+        <i class="fa-solid fa-boxes-stacked"></i>
+      </div>
+      <div class="title">
+        <h2>Banco de Alimentos</h2>
+      </div>
+    </header>
+    <section class="content-tabs">
+      <ul class="tab-list">
+        <li class="tab-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="tab-item">
+          <a href="#galery">Galeria</a>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h3>Sobre</h3>
+      <h4>O que é?</h4>
+      <p>
+        O Banco de Alimentos é um equipamento da Política de Segurança Alimentar e Nutricional que atua na redução do desperdício de alimentos ao mesmo tempo em que proporciona suporte alimentar para comunidades vulneráveis.
+      </p>
+      <p>
+        Sua finalidade primordial é aproveitar excedentes alimentares que, de outra forma, poderiam ser descartados, e distribuí-los para instituições de caridade, organizações não governamentais e programas sociais que atendem pessoas em situação de vulnerabilidade.
+      </p>
+      <p>
+        O funcionamento do Banco de Alimentos é baseado em uma rede eficiente de coleta, armazenamento e distribuição.
+      </p>
+      <p>
+        Empresas agrícolas, produtores, supermercados e outros doadores contribuem com alimentos que, embora ainda próprios para consumo, podem estar próximos da data de vencimento ou apresentar pequenas imperfeições estéticas que os tornariam indesejados no mercado convencional.
+      </p>
+      <p>
+        Esses alimentos são cuidadosamente inspecionados para garantir sua qualidade e segurança antes de serem redistribuídos.
+      </p>
+      <p>
+        O Banco de Alimentos de Toledo conta com uma unidade de recebimento em que os alimentos são selecionados e destinados conforme possibilidade e uma unidade de processamento onde são produzidas polpas, geleias e outros minimamente processados.
+      </p>
+      <p>
+        Por fim, um destaque é o processo de desidratação dos alimentos, que facilita a armazenagem, além de manter a qualidade nutricional.Além disso, o Banco de Alimentos conta com o espaço da Cozinha Escola, que promove a educação alimentar e nutricional, fazendo com que a população atendida conheça e pratique a produção de alimentos mais saudáveis. Esse espaço é também utilizado para cursos profissionalizantes, que futuramente poderão se refletir na geração de renda aos participantes.
+      </p>
+      <h4>Quem pode acessar?</h4>
+      <p>
+        O Banco de Alimentos beneficia pessoas em vulnerabilidade social por meio de entidades e projetos, tais como: hospitais, asilos, casas de recuperação, entidades socioassistenciais, casas lares, entre outros que atendam pessoas em estado de insegurança alimentar e nutricional e famílias em vulnerabilidade social.
+      </p>
+    </section>
+    <section id="galery">
+      <h3>Galeria</h3>
+      <div class="slideshow-container">
+        <div class="slides fade-animation">
+          <div class="slide-number">1 / 4</div>
+          <img src="./img_banco_alimentos/banco_de_alimentos_020424_foto_fabio_ulsenheimer.jpg"" alt="Banco de Alimentos">
+          <div class="slide-caption">Banco de alimentos</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">2 / 4</div>
+          <img src="./img_banco_alimentos/banco_de_alimentos_inauguracao_dielson_pickler_0.jpg"" alt="Inauguração do Banco de Alimentos">
+          <div class="slide-caption">Inauguração do Banco de Alimentos</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">3 / 4</div>
+          <img src="./img_banco_alimentos/inauguracao_do_banco_de_alimentos_carlos_rodrigues_12.jpg"" alt="Inauguração do Banco de Alimentos">
+          <div class="slide-caption">Inauguração do Banco de Alimentos - 2</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">3 / 4</div>
+          <img src="./img_banco_alimentos/inauguracao_do_banco_de_alimentos_carlos_rodrigues_21.jpg"" alt="Inauguração do Banco de Alimentos">
+          <div class="slide-caption">Inauguração do Banco de Alimentos - 3</div>
         </div>
 
-        <div>
-            ㅤㅤㅤㅤㅤㅤㅤ
+        <span class="prev" onclick="previousSlide()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+        <span class="next" onclick="nextSlide()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
+
+        <div class="dots">
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+          <span class="dot" onclick="setSlide(4)"></span>
         </div>
-
-
+      </div>
+    </section>
+  </main>
   <!-- INICIO RODAPE -->
   <footer>
     <div class="information">
@@ -286,5 +313,7 @@
       </div>
     </div>
   </footer>
+  <!-- scripts -->
+  <script src="galery.js"></script>
 </body>
 </html>
