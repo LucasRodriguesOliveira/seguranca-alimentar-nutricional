@@ -111,8 +111,28 @@ section:is(#about, #galery, #files) h4 {
   margin-bottom: 6px; 
 }
 
+section:is(#about, #galery, #files) h5 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  padding: 4px 8px;
+  border-left: 2px solid var(--primary-dark-2);
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
 section#about img {
   width: 100%;
+}
+
+section#about :is(ul, ol) {
+  padding: 8px;
+  margin: 12px;
+  margin-left: 15%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
 }
 
 section#galery .slideshow-container {
@@ -347,8 +367,18 @@ section#files .accordion .panel li a {
     grid-column: heading;
   }
 
+  section:is(#about, #galery, #files) h5 {
+    grid-column: heading;
+  }
+
   section:is(#about, #galery, #files) p {
     grid-column: text;
+  }
+
+  section#about :is(ul, ol) {
+    grid-column: text;
+    padding: 4px;
+    margin: unset;
   }
 
   section:is(#about, #galery, #files) > img {

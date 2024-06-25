@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./topbar.css">
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./breadcrumb.css">
+    <link rel="stylesheet" href="./department.css">
     <link rel="stylesheet" href="./CAISAN.css">
 </head>
 <body>
@@ -155,7 +157,7 @@
       <li>
         <a href="restaurantes.html">
           <div class="logo">
-            <i class="fa-solid fa-people-roof"></i>
+            <i class="fa-solid fa-utensils"></i>
           </div>
           <div class="label">
             Restaurantes
@@ -175,49 +177,60 @@
     </ul>
   </div>
 
-    <main>
-        <section>
-            <div class="foto_fundo">
-                <h1 class="retirar_top retirar">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</h1>
-                <div class="retirar">
-                    <i class="fa-solid fa-c icons"></i>
-                </div>
-            </div>
-            <div class="fundo_titulo">
-                <h2 class="titulo_principal h2_titulo1">CAISAN</h2>
-            </div>
-            <div>
-                <ul class="div_opcoes">
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#cai">Sobre</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="introducao">
-            <h2 id="cai">CAISAN</h2>
-            <p class="texto_sobre">A Câmara Intersetorial Municipal de Segurança Alimentar e Nutricional – CAISAN
-                Municipal – foi criada em 2015 pelo Decreto nº 634, com a finalidade de promover a articulação dos
-                órgãos, entidades e ações da administração pública municipal afetos à área de Segurança Alimentar e
-                Nutricional.</p>
-                <p class="texto_sobre">  
-                A Câmara é integrada por membros das secretarias municipais, a saber:<br />
-                I – da Administração;<br />
-                II – da Educação;<br />
-                III – da Saúde;<br />
-                IV – da Agricultura, Pecuária e Abastecimento;<br />
-                IV – do Agronegócio, de Inovação, Turismo e Desenvolvimento Econômico;<br />
-                V – de Assistência Social;<br />
-                VI – do Meio Ambiente;<br />
-                VII – de Políticas para Mulheres;<br />
-                VII – de Políticas para Infância, Juventude, Mulher, Família e Desenvolvimento Humano;<br />
-                VIII – de Esportes e Lazer;<br />
-                IX – da Juventude;<br />
-                X – da Cultura;<br />
-                XI – de Comunicação;<br />
-                XI – Chefia de Gabinete do Prefeito.<br />
-            </p>
-        </section>
-    </main>
+  <ul class="breadcrumb">
+    <li>
+      <a class="return-btn link" href="index.html">
+        <i class="fa-solid fa-chevron-left"></i>
+        Inicio
+      </a>
+    </li>
+    <li>
+      <span>CAISAN</span>
+    </li>
+  </ul>
 
+  <main>
+    <header class="department">
+      <div class="icon">
+        <i class="fa-solid fa-file-lines"></i>
+      </div>
+      <div class="title">
+        <h2>CAISAN</h2>
+      </div>
+    </header>
+    <section class="content-tabs">
+      <ul class="tab-list">
+        <li class="tab-item">
+          <a href="#about">Sobre</a>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h3>Sobre</h3>
+      <p>
+        A Câmara Intersetorial Municipal de Segurança Alimentar e Nutricional - CAISAN Municipal - foi criada em 2015 pelo Decreto nº 634, com a finalidade de promover a articulação dos órgãos, entidades e ações da administração pública municipal afetos à área de Segurança Alimentar e Nutricional.
+      </p>
+      <p>
+        A Câmara é integrada por membros das secretarias municipais, a saber:
+      </p>
+      <ol>
+        <li>da Administração;</li>
+        <li>da Educação;</li>
+        <li>da Saúde;</li>
+        <li>da Agricultura, Pecuária e Abastecimento;</li>
+        <li>do Agronegócio, de Inovação, Turismo e Desenvolvimento Econômico;</li>
+        <li>de Assistência Social;</li>
+        <li>do Meio Ambiente;</li>
+        <li>de Políticas para Mulheres;</li>
+        <li>de Políticas para Infância, Juventude, Mulher, Família e Desenvolvimento Humano;</li>
+        <li>de Esportes e Lazer;</li>
+        <li>da Juventude;</li>
+        <li>da Cultura;</li>
+        <li>de Comunicação;</li>
+        <li>Chefia de Gabinete do Prefeito.</li>
+      </ol>
+    </section>
+  </main>
   <!-- INICIO RODAPE -->
   <footer>
     <div class="information">
