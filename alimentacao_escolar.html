@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./topbar.css">
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./breadcrumb.css">
+    <link rel="stylesheet" href="./department.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -175,82 +177,93 @@
     </ul>
   </div>
 
-    <main>
-        <section>
-            <div class="foto_fundo">
-                <h1 class="retirar_top retirar">ㅤㅤㅤㅤㅤㅤㅤ</h1>
-                <div class="retirar">
-                    <i class="fa-solid fa-apple-whole icons"></i>
-                </div>
-            </div>
-            <div class="fundo_titulo">
-                <h2 class="titulo_principal h2_titulo1">Alimentação Escolar</h2>
-            </div>
-            <div>
-                <ul class="div_opcoes">
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#sobre_ae">Sobre</a></li>
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#slider">Galeria</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="introducao">
-            <h2 id="sobre_ae" class="">Sobre</h1>
-                <p class="texto_sobre">A alimentação escolar tem como objetivo ofertar refeições nutricionalmente
-                    adequadas para o estudante que possam contribuir para sua aprendizagem, rendimento escolar e
-                    desenvolvimento biopsicossocial. Além disso, as ações de educação alimentar realizadas para as
-                    crianças contribuem para a formação de hábitos alimentares saudáveis.
-                    Todas as refeições são produzidas respeitando os princípios e regras do Programa Nacional da
-                    Alimentação Escolar. Nesse sentido, oferece porções semanais de frutas e hortaliças e são restritas
-                    de alimentos processados ou ultraprocessados conforme Resolução CD/FNDE nº 06, de 08 de maio de
-                    2020.
-                </p>
-                <p class="texto_sobre">Os cardápios também são adaptados para atender aos estudantes diagnosticados com
-                    necessidades alimentares especiais tais como doença celíaca, diabetes, hipertensão, anemias,
-                    alergias e intolerâncias alimentares, dentre outras.
-                    A produção dos alimentos para as escolas municipais urbanas tanto para as com atendimento em tempo
-                    integral quanto parcial é realizada de forma centralizada na Unidade Central de Produção de
-                    Alimentos e é transportada para as escolas para que sejam servidas aos alunos.
-                    Atualmente são atendidas 24 escolas municipais situadas no perímetro urbano do município, sendo que
-                    destas 11 escolas contam com atendimentos de parte dos alunos em tempo integral.
-                </p>
-        </section>
-
-        <section class="introducao">
-            <h2>Quem pode acessar?</h2>
-            <p class="texto_sobre">A alimentação escolar é direito dos alunos da educação básica pública e dever do
-                Estado e será promovida e incentivada com vista ao atendimento das diretrizes estabelecidas na Lei
-                Federal nº 11947 de 16 de junho de 2009.
-            </p>
-        </section>
-
-        <section class="introducao">
-            <h2>Como acessar</h2>
-            <p class="texto_sobre">Entende-se por alimentação escolar todo alimento oferecido no ambiente escolar,
-                independentemente de sua origem, durante o período letivo.
-                Para atendimento dos alunos com necessidades alimentares especiais, os responsáveis devem apresentar o
-                laudo de diagnóstico para a escola, para que a mesma encaminhe juntamente com o formulário padrão para a
-                nutricionista responsável.
-            </p>
-        </section>
-
-        <section class="galeria">
-            <section class="borda_slider">
-                <div id="slider">
-                    <figure>
-                        <img src="./img_alimentacao_escolar/projeto_ean_030818_foto_fabio_ulsenheimer_05.jpg">
-                        <img
-                            src="./img_alimentacao_escolar/seguranca_alimentar_e_discutida_em_toledo_fotos_prefeitura_de_toledo_4.jpg">
-                        <img
-                            src="./img_alimentacao_escolar/unidade_central_de_producao_de_alimentos_testa_novo_ingrediente_na_alimentacao_escolar_creditos_ricardo_morante_22_0.jpg">
-                    </figure>
-                </div>
-            </section>
-        </section>
-
-        <div>
-            ㅤㅤㅤㅤㅤㅤㅤ
+  <main>
+    <header class="department">
+      <div class="icon">
+        <i class="fa-solid fa-people-roof"></i>
+      </div>
+      <div class="title">
+        <h2>Alimentação Escolar</h2>
+      </div>
+    </header>
+    <section class="content-tabs">
+      <ul class="tab-list">
+        <li class="tab-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="tab-item">
+          <a href="#galery">Galeria</a>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h3>Sobre</h3>
+      <p>
+        A alimentação escolar tem como objetivo ofertar refeições nutricionalmente adequadas para o estudante que possam contribuir para sua aprendizagem, rendimento escolar e desenvolvimento biopsicossocial.
+      </p>
+      <p>
+        Além disso, as ações de educação alimentar realizadas para as crianças contribuem para a formação de hábitos alimentares saudáveis.
+      </p>
+      <p>
+        Todas as refeições são produzidas respeitando os princípios e regras do Programa Nacional da Alimentação Escolar. Nesse sentido, oferece porções semanais de frutas e hortaliças e são restritas de alimentos processados ou ultraprocessados conforme Resolução CD/FNDE nº 06, de 08 de maio de 2020.
+      </p>
+      <p>
+        Os cardápios também são adaptados para atender aos estudantes diagnosticados com necessidades alimentares especiais tais como doença celíaca, diabetes, hipertensão, anemias, alergias e intolerâncias alimentares, dentre outras.
+      </p>
+      <p>
+        A produção dos alimentos para as escolas municipais urbanas tanto para as com atendimento em tempo integral quanto parcial é realizada de forma centralizada na Unidade Central de Produção de Alimentos e é transportada para as escolas para que sejam servidas aos alunos.
+      </p>
+      <p>
+        Atualmente são atendidas 24 escolas municipais situadas no perímetro urbano do município, sendo que destas 11 escolas contam com atendimentos de parte dos alunos em tempo integral.
+      </p>
+      <h4>
+        Quem pode acessar?
+      </h4>
+      <p>
+        A alimentação escolar é direito dos alunos da educação básica pública e dever do Estado e será promovida e incentivada com vista ao atendimento das diretrizes estabelecidas na Lei Federal nº 11947 de 16 de junho de 2009.
+      </p>
+      <h4>Como acessar?</h4>
+      <p>
+        Entende-se por alimentação escolar todo alimento oferecido no ambiente escolar, independentemente de sua origem, durante o período letivo.
+      </p>
+      <p>
+        Para atendimento dos alunos com necessidades alimentares especiais, os responsáveis devem apresentar o laudo de diagnóstico para a escola, para que a mesma encaminhe juntamente com o formulário padrão para a nutricionista responsável.
+      </p>
+    </section>
+    <section id="galery">
+      <h3>Galeria</h3>
+      <div class="slideshow-container">
+        <div class="slides fade-animation">
+          <div class="slide-number">1 / 3</div>
+          <img src="./img_alimentacao_escolar/projeto_ean_030818_foto_fabio_ulsenheimer_05.jpg" alt="Projeto EAN">
+          <div class="slide-caption">Projeto EAN</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">2 / 3</div>
+          <img src="./img_alimentacao_escolar/seguranca_alimentar_e_discutida_em_toledo_fotos_prefeitura_de_toledo_4.jpg" alt="Criança">
+          <div class="slide-caption">Criança</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">3 / 3</div>
+          <img src="./img_alimentacao_escolar/unidade_central_de_producao_de_alimentos_testa_novo_ingrediente_na_alimentacao_escolar_creditos_ricardo_morante_22_0.jpg" alt="Prato de comida">
+          <div class="slide-caption">Prato de comida</div>
         </div>
 
+        <span class="prev" onclick="previousSlide()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+        <span class="next" onclick="nextSlide()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
+
+        <div class="dots">
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- INICIO RODAPE -->
   <footer>
     <div class="information">
@@ -288,5 +301,7 @@
       </div>
     </div>
   </footer>
+  <!-- scripts -->
+  <script src="galery.js"></script>
 </body>
 </html>
