@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./topbar.css">
     <link rel="stylesheet" href="./sidebar.css">
     <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="./educacao-alimentar.css">
+    <link rel="stylesheet" href="./breadcrumb.css">
+    <link rel="stylesheet" href="./department.css">
 </head>
 <body>
   <!-- nav -->
@@ -155,7 +156,7 @@
       <li>
         <a href="restaurantes.html">
           <div class="logo">
-            <i class="fa-solid fa-people-roof"></i>
+            <i class="fa-solid fa-utensils"></i>
           </div>
           <div class="label">
             Restaurantes
@@ -175,71 +176,105 @@
     </ul>
   </div>
 
-    <main>
-        <section>
-            <div class="foto_fundo">
-                <h1 class="retirar_top retirar">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</h1>
-                <div class="retirar">
-                    <i class="fa-solid fa-drumstick-bite icons"></i>
-                </div>
-            </div>
-            <div class="fundo_titulo">
-                <h2 class="titulo_principal h2_titulo1">EDUCAÇÃO ALIMENTAR</h2>
-            </div>
-            <div>
-                <ul class="div_opcoes">
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#sobrenosse">Sobre</a></li>
-                    <li class="ul_opcoes retirar"><a class="a_opcoes h2_titulo" href="#galeria">Galeria</a></li>
-                </ul>
-            </div>
-        </section>
-        <section class="introducao">
-            <h2 id="sobrenosse">Educação Alimentar e Nutricional</h2>
-            <p class="texto_sobre">A Educação Alimentar e Nutricional (EAN) é desenvolvida pelos nutricionistas da
-                Unidade Central de Produção de Alimentos como objetivo de fazer com que a população adote práticas
-                autônoma e voluntárias de hábitos alimentares saudáveis. </p>
-            <p class="texto_sobre">Diversas atividades tem sido desenvolvidas na área da EAN, todas buscando atender a
-                algum público que rotineiramente acessa os programas ofertados pela Unidade Central de Produção de
-                Alimentos como, por exemplo:
-                - Avaliação e orientação Nutricional nos Restaurantes Populares;
-                - Oficina de culinária;
-                - Ações educativas nas escolas municipais;
-                - Palestras com orientações para PROJOVEM e CJU;
-                - Palestras para o público idoso;
-                - Projeto “Florir + Saúde”;
-                - Projeto Visita na Cozinha;
-            </p>
-        </section>
-        </section>
-        <section class="introducao">
-            <h2 id="sobrenosse">Quem pode acessar?</h2>
-            <p class="texto_sobre">A Educação Alimentar e Nutricional (EAN) é desenvolvida pelos nutricionistas da
-                Unidade Central de Produção de Alimentos como objetivo de fazer com que a população adote práticas
-                autônoma e voluntárias de hábitos alimentares saudáveis. </p>
-        </section>
+  <ul class="breadcrumb">
+    <li>
+      <a class="return-btn link" href="index.html">
+        <i class="fa-solid fa-chevron-left"></i>
+        Inicio
+      </a>
+    </li>
+    <li>
+      <span>Educação Alimentar</span>
+    </li>
+  </ul>
 
-
-        <div class="borda">
-
-
-            <section id="galeria" class="galeria">
-                <h1 class="titulo_galeria">Galeria</h1>
-
-                <section class="borda_slider">
-                    <div id="slider">
-                        <figure>
-                            <img src="./img-EducaçãoAlimentar/amostras de temperos - prefeitura nos bairro.jpg">
-                            <img src="./img-EducaçãoAlimentar/oficina 2.jpeg">
-                            <img src="./img-EducaçãoAlimentar/prefeitura nos bairros.jpg">
-                            <img src="./img-EducaçãoAlimentar/projeto florir mais saúde.jpg">
-                            <img src="./img-EducaçãoAlimentar/visita_sebrae_200224_foto_fabio_ulsenheimer.jpg">
-                        </figure>
-                    </div>
-
-                </section>
-            </section>
+  <main>
+    <header class="department">
+      <div class="icon">
+        <i class="fa-solid fa-chalkboard-user"></i>
+      </div>
+      <div class="title">
+        <h2>Educação Alimentar</h2>
+      </div>
+    </header>
+    <section class="content-tabs">
+      <ul class="tab-list">
+        <li class="tab-item">
+          <a href="#about">Sobre</a>
+        </li>
+        <li class="tab-item">
+          <a href="#galery">Galeria</a>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h3>Sobre</h3>
+      <p>
+        A Educação Alimentar e Nutricional (EAN) é desenvolvida pelos nutricionistas da Unidade Central de Produção de Alimentos como objetivo de fazer com que a população adote práticas autônoma e voluntárias de hábitos alimentares saudáveis.
+      </p>
+      <p>
+        Diversas atividades tem sido desenvolvidas na área da EAN, todas buscando atender a algum público que rotineiramente acessa os programas ofertados pela Unidade Central de Produção de Alimentos como, por exemplo:
+      </p>
+      <ul>
+        <li>Avaliação e orientação Nutricional nos Restaurantes Populares;</li>
+        <li>Oficina de culinária;</li>
+        <li>Ações educativas nas escolas municipais;</li>
+        <li>Palestras com orientações para PROJOVEM e CJU;</li>
+        <li>Palestras para o público idoso;</li>
+        <li>Projeto “Florir + Saúde”;</li>
+        <li>Projeto Visita na Cozinha;</li>
+      </ul>
+      <h4>Quem pode acessar?</h4>
+      <p>
+        A Educação Alimentar e Nutricional (EAN) é desenvolvida pelos nutricionistas da Unidade Central de Produção de Alimentos como objetivo de fazer com que a população adote práticas autônoma e voluntárias de hábitos alimentares saudáveis.
+      </p>
+    </section>
+    <section id="galery">
+      <h3>Galeria</h3>
+      <div class="slideshow-container">
+        <div class="slides fade-animation">
+          <div class="slide-number">1 / 5</div>
+          <img src="./img-EducaçãoAlimentar/amostras de temperos - prefeitura nos bairro.jpg" alt="Amostras de temperos">
+          <div class="slide-caption">Amostras de temperos</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">2 / 5</div>
+          <img src="./img-EducaçãoAlimentar/oficina 2.jpeg" alt="Oficina">
+          <div class="slide-caption">Oficina</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">3 / 5</div>
+          <img src="./img-EducaçãoAlimentar/prefeitura nos bairros.jpg" alt="Prefeitura nos bairros">
+          <div class="slide-caption">Prefeitura nos bairros</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">4 / 5</div>
+          <img src="./img-EducaçãoAlimentar/projeto florir mais saúde.jpg" alt="Projeto florir mais saúde">
+          <div class="slide-caption">Projeto Florir mais saúde</div>
+        </div>
+        <div class="slides fade-animation">
+          <div class="slide-number">5 / 5</div>
+          <img src="./img-EducaçãoAlimentar/visita_sebrae_200224_foto_fabio_ulsenheimer.jpg" alt="Visita Sebrae">
+          <div class="slide-caption">Visita Sebrae</div>
         </div>
 
+        <span class="prev" onclick="previousSlide()">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+        <span class="next" onclick="nextSlide()">
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
+
+        <div class="dots">
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+          <span class="dot" onclick="setSlide(4)"></span>
+          <span class="dot" onclick="setSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- INICIO RODAPE -->
   <footer>
     <div class="information">
@@ -277,5 +312,7 @@
       </div>
     </div>
   </footer>
+  <!-- Scripts -->
+  <script src="galery.js"></script>
 </body>
 </html>
