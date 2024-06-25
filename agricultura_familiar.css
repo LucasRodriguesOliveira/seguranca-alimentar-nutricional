@@ -1,0 +1,17 @@
+input#atas2023:checked ~ .accordion .header .icon .fa-caret-up {
+  display: inline;
+  color: var(--background-primary);
+}
+
+input#atas2023:not(:checked) ~ .accordion .header .icon .fa-caret-down {
+  display: inline;
+}
+
+input#atas2023:checked ~ .accordion .header {
+  background-color: var(--primary);
+  color: var(--background-primary);
+}
+
+input#atas2023:checked ~ .accordion .panel {
+  max-height: 150px;
+}
