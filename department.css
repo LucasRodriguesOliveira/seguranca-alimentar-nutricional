@@ -39,6 +39,7 @@ section.content-tabs {
   position: sticky;
   top: 80px;
   left: 0;
+  z-index: 7;
 }
 
 section.content-tabs ul {
@@ -210,6 +211,68 @@ section#galery .slideshow-container .slides img {
   animation-duration: 1.5s;
 }
 
+section#files ul {
+  list-style-type: none;
+}
+
+section#files a {
+  text-decoration: none;
+}
+
+section#files .accordions {
+  width: 100%;
+  padding: 0 8px;
+}
+
+section#files .accordion-container {
+  margin-bottom: 8px;
+}
+
+section#files .accordion {
+  width: 100%;
+}
+
+section#files .accordion .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8px;
+  background-color: #D9D9D9;
+  color: var(--text-primary);
+  transition: .4s ease-out;
+  cursor: pointer;
+}
+
+.accordion .header .icon i.fa-solid {
+  display: none;
+  color: #717171;
+}
+
+section#files .accordion .panel {
+  background-color: var(--background-secondary);
+  padding: 0 12px;
+  overflow: hidden;
+  transition: .6s ease;
+  max-height: 0;
+}
+
+section#files .accordion .panel li {
+  padding: 8px 6px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+section#files .accordion .panel li a {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  color: var(--honolulu-blue);
+  font-size: .9rem;
+}
+
 @keyframes fade {
   from {
     opacity: .4;
@@ -295,6 +358,15 @@ section#galery .slideshow-container .slides img {
   section#galery .slideshow-container {
     grid-column: heading;
     --h-sz: 320px;
+  }
+
+  section#files .accordions {
+    grid-column: heading;
+  }
+
+  section#files .accordion .panel li a {
+    justify-content: flex-start;
+    gap: 16px;
   }
 }
 
