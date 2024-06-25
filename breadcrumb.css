@@ -25,12 +25,10 @@ ul.breadcrumb li span {
 }
 
 ul.breadcrumb li:not(:first-child) {
-  position: relative;
-  margin-left: 1.5%;
+  margin-left: 2%;
 }
 
 ul.breadcrumb li:not(:first-child)::before {
   content: '|';
-  left: -25%;
-  position: absolute;
+  margin-right: 5px;
 }
