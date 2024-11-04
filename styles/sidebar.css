@@ -18,7 +18,7 @@
               3px 0 6px rgba(0 0 0 / .25);
 }
 
-#sidebar:checked ~ .sidebar {
+.sidebar.active {
   width: 75%;
   overflow: visible;
 }
@@ -189,7 +189,7 @@
 }
 
 @media only screen and (min-width: 660px) {
-  #sidebar:checked ~ .sidebar {
+  .sidebar.active {
     width: 45%;
   }
 
@@ -225,13 +225,13 @@
 }
 
 @media only screen and (min-width: 800px) {
-  #sidebar:checked ~ .sidebar {
+  .sidebar.active {
     width: 35%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  #sidebar:checked ~ .sidebar {
+  .sidebar.active {
     width: 25%;
   }
 }

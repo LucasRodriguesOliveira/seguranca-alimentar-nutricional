@@ -8,7 +8,7 @@ function showSlides(pos) {
     slideIndex = 1;
   }
 
-  if (pos < slideIndex) {
+  if (pos <= 0) {
     slideIndex = slides.length;
   }
 
@@ -36,5 +36,3 @@ function setSlide(n) {
   slideIndex = n;
   showSlides(n);
 }
-
-showSlides(slideIndex);

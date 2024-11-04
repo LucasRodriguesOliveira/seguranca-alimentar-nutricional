@@ -20,7 +20,7 @@ nav.toolbar div.icon {
   cursor: pointer;
 }
 
-nav.toolbar div.icon label {
+nav.toolbar div.icon :is(label, div) {
   cursor: pointer;
 }
 
