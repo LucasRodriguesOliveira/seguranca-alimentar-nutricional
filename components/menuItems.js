@@ -38,6 +38,12 @@ const MENU_ITEMS = {
       label: 'Alimentação Escolar',
     },
     {
+      slug: 'panificadora-social',
+      active: false,
+      path: 'panificadora-social',
+      icon: ['fa-solid', 'fa-bread-slice'],
+      label: 'Panificadora Social',
+    }, {
       slug: 'banco-de-alimentos',
       active: false,
       path: 'banco-de-alimentos',

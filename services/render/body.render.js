@@ -5,17 +5,31 @@ const styleEnum = {
   HEADING_3: 'h6',
 };
 
+const markEnum = {
+  BOLD: 'strong',
+  ITALIC: 'italic',
+  UNDERLINE: 'underline'
+};
+
 const contentTransform = (data) => {
   return data.map(({ children, style }) => {
-    const text = children[0].text;
-    let image = !!text.match(/(\[.+\]\(.+\))/);
+    const text = children.length > 1
+      ? children.map(({ text, marks }) => ({
+        text,
+        marks,
+      }))
+      : children[0].text;
+
+    let image = children.length === 1
+      ? !!children[0].text.match(/(\[.+\]\(.+\))/)
+      : '';
 
     if (image) {
-      const url = text
+      const url = children[0].text
         .replace(/(\[.+\])(\(.+\))/, '$2') // remove o texto, mantendo somente a url
         .replace(/\(/, '') // remove o parênteses inicial
         .replace(/\)/, ''); // remove o parênteses final
-      const citation = text
+      const citation = children[0].text
         .replace(/(\[.+\])(\(.+\))/, '$1') // remove a url, mantendo somente o texto
         .replace(/\[/, '') // remove o conchetes inicial
         .replace(/\]/, ''); // remove o conchetes final
@@ -42,20 +56,46 @@ const createLogger = (context) => {
   }
 };
 
-const createParagraph = (text) => {
-  const element = document.createElement('p');
+const createTextElement = (text, marks) => {
   const textNode = document.createTextNode(text);
 
-  element.append(textNode);
+  return marks
+    .map((mark) => {
+      if (mark === markEnum.BOLD) {
+        return document.createElement('strong');
+      }
 
-  return element;
-}
+      if (mark === markEnum.ITALIC) {
+        return document.createElement('em');
+      }
 
-const createImage = (image) => {
-  const element = document.createElement('img');
-  element.setAttribute('title', image.citation);
-  element.setAttribute('alt', image.citation);
-  element.setAttribute('src', image.url);
+      if (mark === markEnum.UNDERLINE) {
+        return document.createElement('u');
+      }
+
+      return document.createElement('span');
+    })
+    .reduce((prev, next) => {
+      next.appendChild(prev);
+      return next;
+    }, textNode);
+};
+
+const createParagraph = (text) => {
+  const element = document.createElement('p');
+
+  if (!Array.isArray(text)) {
+    element.appendChild(
+      document.createTextNode(text),
+    );
+
+    return element;
+  }
+
+  text.map((item) => {
+    const textElement = createTextElement(item.text, item.marks);
+    element.append(textElement);
+  })
 
   return element;
 }
