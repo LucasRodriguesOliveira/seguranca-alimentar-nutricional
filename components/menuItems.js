@@ -43,6 +43,12 @@ const MENU_ITEMS = {
       path: 'panificadora-social',
       icon: ['fa-solid', 'fa-bread-slice'],
       label: 'Panificadora Social',
+    }, {
+      slug: 'banco-de-alimentos',
+      active: false,
+      path: 'banco-de-alimentos',
+      icon: ['fa-solid', 'fa-boxes-stacked'],
+      label: 'Banco de Alimentos',
     },
   ],
 };

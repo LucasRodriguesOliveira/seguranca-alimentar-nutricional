@@ -2,6 +2,7 @@ const pageKey = {
   AGRICULTURA_FAMILIAR: 'agricultura-familiar',
   ALIMENTACAO_ESCOLAR: 'alimentacao-escolar',
   PANIFICADORA_SOCIAL: 'panificadora-social',
+  BANCO_DE_ALIMENTOS: 'banco-de-alimentos',
 };
 
 const makeUrl = (key) => {
