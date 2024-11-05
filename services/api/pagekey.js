@@ -4,6 +4,7 @@ const pageKey = {
   COMSEA: 'comsea',
   PANIFICADORA_SOCIAL: 'panificadora-social',
   BANCO_DE_ALIMENTOS: 'banco-de-alimentos',
+  CAISAN: 'caisan',
 };
 
 const makeUrl = (key) => {

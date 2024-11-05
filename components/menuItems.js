@@ -56,5 +56,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-boxes-stacked'],
       label: 'Banco de Alimentos',
     },
+    {
+      slug: 'caisan',
+      active: false,
+      path: 'caisan',
+      icon: ['fa-solid', 'fa-file-lines'],
+      label: 'Caisan',
+    },
   ],
 };
