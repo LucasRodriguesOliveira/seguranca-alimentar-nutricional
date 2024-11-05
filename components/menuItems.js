@@ -37,5 +37,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-apple-whole'],
       label: 'Alimentação Escolar',
     },
+    {
+      slug: 'panificadora-social',
+      active: false,
+      path: 'panificadora-social',
+      icon: ['fa-solid', 'fa-bread-slice'],
+      label: 'Panificadora Social',
+    },
   ],
 };

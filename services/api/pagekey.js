@@ -1,6 +1,7 @@
 const pageKey = {
   AGRICULTURA_FAMILIAR: 'agricultura-familiar',
   ALIMENTACAO_ESCOLAR: 'alimentacao-escolar',
+  PANIFICADORA_SOCIAL: 'panificadora-social',
 };
 
 const makeUrl = (key) => {
