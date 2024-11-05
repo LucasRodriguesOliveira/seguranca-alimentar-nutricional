@@ -43,6 +43,18 @@ const MENU_ITEMS = {
       path: 'comsea',
       icon: ['fa-solid', 'fa-apple-whole'],
       label: 'COMSEA',
+    }, {
+      slug: 'panificadora-social',
+      active: false,
+      path: 'panificadora-social',
+      icon: ['fa-solid', 'fa-bread-slice'],
+      label: 'Panificadora Social',
+    }, {
+      slug: 'banco-de-alimentos',
+      active: false,
+      path: 'banco-de-alimentos',
+      icon: ['fa-solid', 'fa-boxes-stacked'],
+      label: 'Banco de Alimentos',
     },
   ],
 };
