@@ -37,5 +37,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-apple-whole'],
       label: 'Alimentação Escolar',
     },
+    {
+      slug: 'comsea',
+      active: false,
+      path: 'comsea',
+      icon: ['fa-solid', 'fa-apple-whole'],
+      label: 'COMSEA',
+    },
   ],
 };
