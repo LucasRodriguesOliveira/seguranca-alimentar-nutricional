@@ -34,27 +34,26 @@ const render = {
 };
 
 function run(key) {
-  const [isLoading, setIsLoading] = loading();
-  updateDocumentTitle(APP_NAME);
-  const [isOpen, setIsOpen] = sidebar(key, MENU_ITEMS.main, MENU_ITEMS.default);
-  toolbar(APP_NAME, () => setIsOpen(true));
-  setIsLoading(true);
-
-  window.addEventListener('load', async () => {
-    const pageData = await fetchData(key, ({ title, icon }) => {
+    const [isLoading, setIsLoading] = loading();
+    updateDocumentTitle(APP_NAME);
+    const [isOpen, setIsOpen] = sidebar(key, MENU_ITEMS.main, MENU_ITEMS.default);
+    toolbar(APP_NAME, () => setIsOpen(true));
+    setIsLoading(true);
+  
+    window.addEventListener('load', async () => {
+      const pageData = await fetchData(key, ({ title, icon }) => {
         breadcrumb(breadcrumbPath(title));
         updateDocumentTitle(`${APP_NAME} | ${title}`);
-        // Verifica se icon é válido antes de usar .split()
-        const iconArray = icon ? icon.split('') : [];
-        mainRender(title, iconArray, sections);
+        mainRender(title, icon.split(' '), sections);
         footer(APP_NAME);
       });
-
-    await pageRender(pageData, render, () => {
-      showSlides(slideIndex);
-      setIsLoading(false);
+  
+      await pageRender(pageData, render, () => {
+        showSlides(slideIndex);
+        setIsLoading(false);
+      });
     });
-  });
-}
+  }
+  
 
 run(pageKey.BANCO_DE_ALIMENTOS);
