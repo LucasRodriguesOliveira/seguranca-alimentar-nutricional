@@ -37,5 +37,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-apple-whole'],
       label: 'Alimentação Escolar',
     },
+    {
+      slug: 'banco-de-alimentos',
+      active: false,
+      path: 'banco-de-alimentos',
+      icon: ['fa-solid', 'fa-boxes-stacked'],
+      label: 'Banco de Alimentos',
+    },
   ],
 };
