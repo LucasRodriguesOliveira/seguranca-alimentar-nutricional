@@ -2,6 +2,7 @@ const pageKey = {
   AGRICULTURA_FAMILIAR: 'agricultura-familiar',
   ALIMENTACAO_ESCOLAR: 'alimentacao-escolar',
   BANCO_DE_ALIMENTOS: 'banco-de-alimentos',
+  CAISAN: 'caisan',
 };
 
 const makeUrl = (key) => {
