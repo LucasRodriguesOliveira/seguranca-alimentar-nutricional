@@ -93,7 +93,7 @@ const createAccordion = ({ key, data }) => {
       if (maxHeight === '0' || maxHeight === '0px' || maxHeight.length === 0) {
         icon.removeChild(icons.downIcon);
         icon.appendChild(icons.upIcon);
-        panel.style.maxHeight = '150px';
+        panel.style.maxHeight = '350px';
         header.classList.add('active');
       } else {
         icon.removeChild(icons.upIcon);

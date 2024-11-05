@@ -38,6 +38,12 @@ const MENU_ITEMS = {
       label: 'Alimentação Escolar',
     },
     {
+      slug: 'comsea',
+      active: false,
+      path: 'comsea',
+      icon: ['fa-solid', 'fa-apple-whole'],
+      label: 'COMSEA',
+    }, {
       slug: 'panificadora-social',
       active: false,
       path: 'panificadora-social',
