@@ -7,6 +7,7 @@ const pageKey = {
   CAISAN: 'caisan',
   COZINHA_SOCIAL: 'cozinha-social',
   CASAS_ABRIGO: 'casas-abrigo',
+  RESTAURANTES: 'restaurantes'
 };
 
 const makeUrl = (key) => {
