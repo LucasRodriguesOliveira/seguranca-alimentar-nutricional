@@ -6,6 +6,7 @@ const pageKey = {
   BANCO_DE_ALIMENTOS: 'banco-de-alimentos',
   CAISAN: 'caisan',
   COZINHA_SOCIAL: 'cozinha-social',
+  CASAS_ABRIGO: 'casas-abrigo',
 };
 
 const makeUrl = (key) => {
