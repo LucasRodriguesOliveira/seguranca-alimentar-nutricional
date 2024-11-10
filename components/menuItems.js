@@ -41,7 +41,7 @@ const MENU_ITEMS = {
       slug: 'comsea',
       active: false,
       path: 'comsea',
-      icon: ['fa-solid', 'fa-apple-whole'],
+      icon: ['fa-solid', 'fa-file-lines'],
       label: 'COMSEA',
     }, {
       slug: 'panificadora-social',
@@ -62,6 +62,13 @@ const MENU_ITEMS = {
       path: 'caisan',
       icon: ['fa-solid', 'fa-file-lines'],
       label: 'Caisan',
+    },
+    {
+      slug: 'cozinha-social',
+      active: false,
+      path: 'cozinha-social',
+      icon: ['fa-solid', 'fa-drumstick-bite'],
+      label: 'Cozinha Social',
     },
   ],
 };
