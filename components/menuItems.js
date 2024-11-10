@@ -70,5 +70,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-drumstick-bite'],
       label: 'Cozinha Social',
     },
+    {
+      slug: 'casas-abrigo',
+      active: false,
+      path: 'casas-abrigo',
+      icon: ['fa-solid', 'fa-person-shelter'],
+      label: 'Casas Abrigo',
+    },
   ],
 };
