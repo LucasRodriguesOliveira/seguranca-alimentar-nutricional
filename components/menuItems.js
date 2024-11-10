@@ -84,5 +84,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-utensils'],
       label: 'Restaurantes',
     },
+    {
+      slug: 'educacao-alimentar',
+      active: false,
+      path: 'educacao-alimentar',
+      icon: ['fa-solid', 'fa-chalkboard-user'],
+      label: 'Educação Alimentar',
+    },
   ],
 };

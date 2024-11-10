@@ -7,7 +7,8 @@ const pageKey = {
   CAISAN: 'caisan',
   COZINHA_SOCIAL: 'cozinha-social',
   CASAS_ABRIGO: 'casas-abrigo',
-  RESTAURANTES: 'restaurantes'
+  RESTAURANTES: 'restaurantes',
+  EDUCACAO_ALIMENTAR: 'educacao-alimentar',
 };
 
 const makeUrl = (key) => {
