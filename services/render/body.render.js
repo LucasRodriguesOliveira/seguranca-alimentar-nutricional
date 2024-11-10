@@ -100,6 +100,14 @@ const createParagraph = (text) => {
   return element;
 }
 
+const createImage = (image) => {
+  const element = document.createElement('img');
+  element.setAttribute('title', image.citation);
+  element.setAttribute('alt', image.citation);
+  element.setAttribute('src', image.url.startsWith('http') ? image.url : `../../${image.url}`);
+  return element;
+}
+
 const createHeading = (text, level) => {
   const element = document.createElement(level);
   const textNode = document.createTextNode(text);

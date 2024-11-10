@@ -77,5 +77,12 @@ const MENU_ITEMS = {
       icon: ['fa-solid', 'fa-person-shelter'],
       label: 'Casas Abrigo',
     },
+    {
+      slug: 'restaurantes',
+      active: false,
+      path: 'restaurantes',
+      icon: ['fa-solid', 'fa-utensils'],
+      label: 'Restaurantes',
+    },
   ],
 };
