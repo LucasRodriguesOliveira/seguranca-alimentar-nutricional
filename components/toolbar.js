@@ -9,7 +9,7 @@ const menuItems = [
   },
   {
     label: 'Sobre',
-    path: 'about.html',
+    path: 'sobre.html',
   },
   {
     label: 'Contato',

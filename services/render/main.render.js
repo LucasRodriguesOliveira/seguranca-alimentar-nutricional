@@ -83,12 +83,14 @@ const createMainSection = (section) => {
   const sectionElement = document.createElement('section');
   sectionElement.setAttribute('id', section.path);
 
-  const sectionTitle = document.createElement('h3');
+  if(!section?.skipHeader) {
+    const sectionTitle = document.createElement('h3');
   sectionTitle.appendChild(
     document.createTextNode(section.label),
   );
 
   sectionElement.appendChild(sectionTitle);
+  }
 
   return sectionElement;
 }
