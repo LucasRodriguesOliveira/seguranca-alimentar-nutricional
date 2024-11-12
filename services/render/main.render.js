@@ -95,15 +95,19 @@ const createMainSection = (section) => {
   return sectionElement;
 }
 
-const mainRender = (title, icon, sections) => {
+const mainRender = (title, icon, sections, options = false) => {
   const mainContainer = document.createElement('main');
 
-  const header = createMainHeader(title, icon);
-  mainContainer.appendChild(header);
+  if (!options?.skipHeader) {
+    const header = createMainHeader(title, icon);
+    mainContainer.appendChild(header);
+  }
 
   if(Array.isArray(sections)) {
-    const tabList = createMainContentTabs(sections);
-    mainContainer.appendChild(tabList);
+    if (!options?.skipTabs) {
+      const tabList = createMainContentTabs(sections);
+      mainContainer.appendChild(tabList);
+    }
 
     sections.forEach((section) => {
       const item = createMainSection(section);
