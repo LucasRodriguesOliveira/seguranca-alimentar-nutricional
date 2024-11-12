@@ -8,9 +8,9 @@ const MENU_ITEMS = {
       label: 'Home',
     },
     {
-      slug: 'about',
+      slug: 'sobre',
       active: false,
-      path: 'about.html',
+      path: 'sobre.html',
       icon: ['fa-solid', 'fa-info'],
       label: 'Sobre',
     },

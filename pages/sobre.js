@@ -17,6 +17,7 @@ const sections = [
   {
     path: 'about',
     label: 'Sobre',
+    skipHeader: true,
   },
 ];
 

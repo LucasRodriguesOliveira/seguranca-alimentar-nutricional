@@ -9,6 +9,7 @@ const pageKey = {
   CASAS_ABRIGO: 'casas-abrigo',
   RESTAURANTES: 'restaurantes',
   EDUCACAO_ALIMENTAR: 'educacao-alimentar',
+  SOBRE: 'sobre',
 };
 
 const makeUrl = (key) => {
