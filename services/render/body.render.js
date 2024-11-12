@@ -12,7 +12,7 @@ const markEnum = {
 };
 
 const contentTransform = (data) => {
-  return data.map(({ children, style }) => {
+  return data.map(({ children, style, listItem }) => {
     const text = children.length > 1
       ? children.map(({ text, marks }) => ({
         text,
@@ -43,7 +43,8 @@ const contentTransform = (data) => {
     return {
       style,
       text,
-      image
+      image,
+      listItem
     };
   });
 };
@@ -117,20 +118,57 @@ const createHeading = (text, level) => {
   return element;
 }
 
-const createAboutItem = ({ text, image, style }) => {
+
+const createListItem = (text) => {
+  const element = document.createElement('li');
+  element.appendChild(
+    document.createTextNode(text),
+    );
+  return element;
+}
+
+const createList = (listType) =>{
+  if(listType === 'ordered'){
+    return document.createElement('ol');
+  }
+
+  return document.createElement('ul');
+}
+
+const createAboutItem = ({ text, image, style, listItem }, list) => {
+  let item;
   if (style === styleEnum.NORMAL) {
     if (image) {
-      return createImage(image);
+      item = {
+        element: createImage(image)
+      };
     }
+    if(listItem){
+      if(!list){
+        list = createList(listItem === 'bullet' ? 'unordered' : 'ordered');
+      }
+      const listItemElement = createListItem(text);
+      list.appendChild(listItemElement);
 
-    return createParagraph(text);
+      item = {
+        list,
+        isLista: true,
+        element: null,
+      };
+    } else {
+      item = {
+        element: createParagraph(text)
+      }
+    }
   }
 
   if (style.match(/h[4-6]/)) {
-    return createHeading(text, style);
+    item = {
+      element:createHeading(text, style)
+    }
   }
 
-  return null;
+  return item;
 }
 
 const bodyRender = async (data, callback) => {
@@ -142,9 +180,19 @@ const bodyRender = async (data, callback) => {
     log('Não há seção "sobre".', logLevel.error);
     throw new Error('NoAboutSectionException');
   }
-
+  let list;
   contentList.forEach((content) => {
-    const item = createAboutItem(content);
+
+    const item = createAboutItem(content, list);
+    if(item?.list){
+      list = item.list;
+
+    }
+    if(!item?.isLista && list){
+      container.appendChild(list);
+
+      list = null;
+    }
 
     if (!item) {
       log('Elemento não registrado para renderização', logLevel.error);
@@ -152,7 +200,9 @@ const bodyRender = async (data, callback) => {
       throw new Error('NotRegisteredItem');
     }
 
-    container.appendChild(item);
+    if(item?.element) {
+      container.appendChild(item.element);
+    }
   });
 
   if (callback) {
