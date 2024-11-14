@@ -43,7 +43,7 @@ const createSidebarHeader = () => {
   return container;
 };
 
-const createSidebarItem = (item, isRoot) => {
+const createSidebarItem = (item, isRoot, isActiveMain) => {
   const itemElement = document.createElement('li');
 
   if (item.active) {
@@ -57,6 +57,8 @@ const createSidebarItem = (item, isRoot) => {
     path = '#';
   } else if (isRoot) {
     path = `../${item.path}`;
+  } else if (isActiveMain) {
+    path = `../pages/${item.path}/${item.path}.html`;
   } else {
     path = `../${item.path}/${item.path}.html`;
   }
@@ -83,24 +85,24 @@ const createSidebarItem = (item, isRoot) => {
   return itemElement;
 };
 
-const createSidebarMainItems = (items) => {
+const createSidebarMainItems = (items, isActiveMain) => {
   const container = document.createElement('ul');
   container.classList.add('main-items');
 
   items.forEach((item) => {
-    const menuItem = createSidebarItem(item, true);
+    const menuItem = createSidebarItem(item, true, isActiveMain);
     container.appendChild(menuItem);
   });
 
   return container;
 };
 
-const createSidebarItems = (items) => {
+const createSidebarItems = (items, isActiveMain) => {
   const container = document.createElement('ul');
   container.classList.add('departments-list');
 
   items.forEach((item) => {
-    const menuItem = createSidebarItem(item);
+    const menuItem = createSidebarItem(item, false, isActiveMain);
     container.appendChild(menuItem);
   });
 
@@ -152,9 +154,9 @@ const sidebar = (currentPage, mainPages, pages) => {
     setSidebarOpen(false);
   });
   const header = createSidebarHeader();
-  const mainItems = createSidebarMainItems(mainPages);
+  const mainItems = createSidebarMainItems(mainPages, !!mainActivePage);
   const divider = createSidebarDivider();
-  const items = createSidebarItems(pages);
+  const items = createSidebarItems(pages, !!mainActivePage);
 
   container.appendChild(closeBtn);
   container.appendChild(header);

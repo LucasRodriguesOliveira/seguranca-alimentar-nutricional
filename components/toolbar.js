@@ -6,14 +6,17 @@ const menuItems = [
   {
     label: 'Home',
     path: 'index.html',
+    key: 'index',
   },
   {
     label: 'Sobre',
     path: 'sobre.html',
+    key: 'sobre',
   },
   {
     label: 'Contato',
     path: 'index.html#contact',
+    key: 'contato',
   },
 ];
 
@@ -39,7 +42,7 @@ const createNavItem = (currentPage, page, isFar) => {
   const link = document.createElement('a');
   let href = page.path;
 
-  if (currentPage === page.label) {
+  if (currentPage === page.key) {
     link.classList.add('active');
     href = '#';
   }
@@ -60,7 +63,7 @@ const createNavItems = (currentPage) => {
   const menuItemsContainer = document.createElement('ul');
   menuItemsContainer.classList.add('menu-items');
 
-  const isFar = !menuItems.some((item) => item.label === currentPage);
+  const isFar = !menuItems.some((item) => item.key === currentPage);
 
   menuItems.forEach((menuItem) => {
     const item = createNavItem(currentPage, menuItem, isFar);

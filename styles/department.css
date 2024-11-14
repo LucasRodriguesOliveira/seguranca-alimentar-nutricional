@@ -393,8 +393,12 @@ section#files .accordion .panel li a {
     margin: unset;
   }
 
-  section:is(#about, #gallery, #files) > img {
+  section:is(#about, #gallery, #files) > img:not(.full-width-image) {
     grid-column: img;
+  }
+
+  section:is(#about, #gallery, #files) > img.full-width-image {
+    grid-column: heading;
   }
 
   section#gallery .slideshow-container {
