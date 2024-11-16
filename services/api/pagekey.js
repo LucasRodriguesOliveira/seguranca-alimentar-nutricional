@@ -10,6 +10,7 @@ const pageKey = {
   RESTAURANTES: 'restaurantes',
   EDUCACAO_ALIMENTAR: 'educacao-alimentar',
   SOBRE: 'sobre',
+  INDEX: 'home',
 };
 
 const makeUrl = (key) => {

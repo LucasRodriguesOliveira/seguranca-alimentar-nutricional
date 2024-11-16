@@ -60,26 +60,30 @@ const createLogger = (context) => {
 const createTextElement = (text, marks) => {
   const textNode = document.createTextNode(text);
 
-  return marks
-    .map((mark) => {
-      if (mark === markEnum.BOLD) {
-        return document.createElement('strong');
-      }
+  if (marks && Array.isArray(marks)) {
+    return marks
+      .map((mark) => {
+        if (mark === markEnum.BOLD) {
+          return document.createElement('strong');
+        }
+  
+        if (mark === markEnum.ITALIC) {
+          return document.createElement('em');
+        }
+  
+        if (mark === markEnum.UNDERLINE) {
+          return document.createElement('u');
+        }
+  
+        return document.createElement('span');
+      })
+      .reduce((prev, next) => {
+        next.appendChild(prev);
+        return next;
+      }, textNode);
+  }
 
-      if (mark === markEnum.ITALIC) {
-        return document.createElement('em');
-      }
-
-      if (mark === markEnum.UNDERLINE) {
-        return document.createElement('u');
-      }
-
-      return document.createElement('span');
-    })
-    .reduce((prev, next) => {
-      next.appendChild(prev);
-      return next;
-    }, textNode);
+  return textNode;
 };
 
 const createParagraph = (text, isCaption) => {
@@ -128,12 +132,21 @@ const createHeading = (text, level) => {
 
 const createListItem = (text) => {
   const element = document.createElement('li');
-  element.appendChild(document.createTextNode(text));
+
+  if (Array.isArray(text)) {
+    text.map((item) => {
+      const textElement = createTextElement(item.text, item.marks);
+      element.append(textElement);
+    });
+  } else {
+    const textElement = createTextElement(text, null);
+    element.append(textElement);
+  }
+
   return element;
 };
 
 const createList = (listType) => {
-  console.log(listType);
   if (listType === 'ordered') {
     return document.createElement('ol');
   }
@@ -150,7 +163,6 @@ const createAboutItem = ({ text, image, style, listItem, isCaption }, list) => {
       };
     } else if (listItem) {
       if (!list) {
-        console.log(listItem);
         list = createList(listItem === 'bullet' ? 'unordered' : 'ordered');
       }
 
@@ -194,7 +206,6 @@ const bodyRender = async (data, callback) => {
     const item = createAboutItem(content, list);
     if (item?.list) {
       list = item.list;
-      console.log(list);
     }
     if (!item?.isLista && list) {
       container.appendChild(list);

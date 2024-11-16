@@ -110,9 +110,19 @@ const createFooterDevelopedByWho = () => {
   const container = document.createElement('div');
   container.classList.add('who');
 
-  const group = document.createElement('div');
+  const group = document.createElement('a');
   group.classList.add('group');
+  group.classList.add('tooltip')
+  group.setAttribute('href', '/pages/contribuidores/contribuidores.html');
   group.appendChild(document.createTextNode(developedBy.group));
+
+  const groupTooltip = document.createElement('span');
+  groupTooltip.classList.add('tooltip-text');
+  groupTooltip.appendChild(
+    document.createTextNode('Clique para ver os contribuidores'),
+  );
+
+  group.appendChild(groupTooltip);
 
   const degree = document.createElement('div');
   degree.classList.add('degree');
