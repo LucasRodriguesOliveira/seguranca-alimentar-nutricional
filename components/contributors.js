@@ -34,24 +34,7 @@ const createContributorsContainer = (data) => {
   return container;
 };
 
-const contributors = async (octokit) => {
-  // Compare: https://docs.github.com/en/rest/reference/users#get-the-authenticated-user
-  const {
-    data: { login },
-  } = await octokit.rest.users.getAuthenticated();
-
-  const { data } = await octokit.request(
-    'GET /repos/{owner}/{repo}/contributors',
-    {
-      owner: login,
-      repo: 'seguranca-alimentar-nutricional',
-      headers: {
-        'X-GitHub-Api-Version': '2022-11-28',
-      },
-    }
-  );
-  // console.log(data);
-
+const contributors = async (data) => {
   const section = document.createElement('section');
   section.classList.add('contributors');
 
