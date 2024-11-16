@@ -1,3 +1,5 @@
+const bannerTitleText = 'Sistema de Segurança Alimentar e Nutricional do Município de Toledo';
+
 const createHeroBanner = ({ imageUrl, caption }) => {
   const container = document.createElement('div');
   container.classList.add('hero-banner');
@@ -30,11 +32,11 @@ const createBannerTitle = (text) => {
 };
 
 const banner = (imgData) => {
-  const titleText = 'Sistema de Segurança Alimentar e Nutricional do Município de Toledo';
-
   const headerElement = document.createElement('header');
+  headerElement.classList.add('hero');
+
   const heroBanner = createHeroBanner(imgData);
-  const title = createBannerTitle(titleText);
+  const title = createBannerTitle(bannerTitleText);
 
   headerElement.appendChild(heroBanner);
   headerElement.appendChild(title);

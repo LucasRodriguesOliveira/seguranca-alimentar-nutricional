@@ -6,7 +6,7 @@ const menuItems = [
   {
     label: 'Home',
     path: 'index.html',
-    key: 'index',
+    key: 'home',
   },
   {
     label: 'Sobre',

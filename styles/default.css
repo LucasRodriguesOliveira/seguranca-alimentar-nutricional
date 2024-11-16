@@ -19,7 +19,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -28,6 +28,16 @@ body {
   font-size: 18px;
   color: var(--text-primary);
   background-color: var(--background-secondary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
 }
 
 .link {
@@ -69,7 +79,7 @@ header .hero-banner {
 }
 
 header .title h2 {
-  color: var(--primary);
+  color: var(--background-primary);
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
@@ -77,25 +87,25 @@ header .title h2 {
 
 
 @media only screen and (min-width: 800px) {
-  header {
+  header.hero {
     --h_sz: 60dvh;
     position: relative;
     height: var(--h_sz);
   }
 
-  header :is(div.hero-banner, .title) {
+  header.hero :is(div.hero-banner, .title) {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
   }
 
-  header .hero-banner {
+  header.hero .hero-banner {
     z-index: 1;
     display: block;
   }
 
-  header .hero-banner .filter {
+  header.hero .hero-banner .filter {
     position: absolute;
     left: 0;
     top: 0;
@@ -105,7 +115,7 @@ header .title h2 {
     z-index: 2;
   }
 
-  header .title {
+  header.hero .title {
     z-index: 3;
     height: var(--h_sz);
     display: flex;
@@ -113,7 +123,7 @@ header .title h2 {
     align-items: center;
 }
 
-  header .title h2 {
+  header.hero .title h2 {
     color: var(--background-primary);
     text-align: left;
     padding: 1.8rem;
@@ -122,7 +132,7 @@ header .title h2 {
     text-shadow: 1px 0 2px rgba(0 0 0 / .3);
   }
 
-  header .hero-banner img {
+  header.hero .hero-banner img {
     width: 100%;
     height: var(--h_sz);
     object-fit: cover;
@@ -131,7 +141,7 @@ header .title h2 {
 }
 
 @media only screen and (min-width: 1000px) {
-  header .title h2 {
+  header.hero .title h2 {
     padding: 2rem;
     font-size: 3.5rem;
     width: 75%;
