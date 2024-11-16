@@ -48,7 +48,7 @@ const createNavItem = (currentPage, page, isFar) => {
   }
 
   if (isFar) {
-    href = `../${href}`;
+    href = `../../${href}`;
   }
 
   link.setAttribute('href', href);
