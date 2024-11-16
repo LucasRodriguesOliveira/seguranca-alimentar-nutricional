@@ -22,13 +22,13 @@ footer .logo {
 }
 
 footer .logo .icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 8px 12px;
   color: var(--primary);
 }
 
 footer .logo .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 footer .developed-by {
@@ -64,11 +64,11 @@ footer .developed-by .who .group {
   }
 
   footer .logo .icon {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   footer .logo .title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   footer .information {
@@ -87,4 +87,46 @@ footer .developed-by .who .group {
     gap: 24px;
     font-size: .85rem;
   }
+}
+
+.tooltip {
+  position: relative;
+  text-decoration: none;
+  border-bottom: 2px dotted var(--background-secondary);
+  isolation: isolate;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(15 15 15 / .8);
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity .4s;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(15 15 15 / .8) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

@@ -28,7 +28,8 @@ const render = {
   body: bodyRender,
 };
 
-const bannerImageKey = 'banner-sobre-seguranca-alimentar-e-nutricional1731421373408';
+const bannerImageKey =
+  'banner-sobre-seguranca-alimentar-e-nutricional1731421373408';
 
 function run(key) {
   const [isLoading, setIsLoading] = loading();
