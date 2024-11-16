@@ -43,7 +43,6 @@ const createTitleCard = () => {
 }
 
 const cardAboutn = () => {
-    console.log("Função cardAbout chamada");
     const sectionElement = document.createElement('section');
     sectionElement.id = 'card-about';
 
