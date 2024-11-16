@@ -58,9 +58,9 @@ const createSidebarItem = (item, isRoot, isActiveMain) => {
   } else if (isRoot) {
     path = `../../${item.path}`;
   } else if (isActiveMain) {
-    path = `/pages/${item.path}/${item.path}.html`;
+    path = `./pages/${item.path}/${item.path}.html`;
   } else {
-    path = `/pages/${item.path}/${item.path}.html`;
+    path = `../${item.path}/${item.path}.html`;
   }
 
   itemContent.setAttribute('href', path);
