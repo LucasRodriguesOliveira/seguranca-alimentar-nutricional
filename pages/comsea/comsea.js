@@ -4,7 +4,7 @@ const breadcrumbPath = (title) => {
   return [
     {
       label: 'Início',
-      path: '../index.html',
+      path: '../../index.html',
     },
     {
       label: title,
