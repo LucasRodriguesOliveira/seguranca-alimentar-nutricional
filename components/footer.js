@@ -112,8 +112,10 @@ const createFooterDevelopedByWho = () => {
 
   const group = document.createElement('a');
   group.classList.add('group');
-  group.classList.add('tooltip')
-  group.setAttribute('href', '/pages/contribuidores/contribuidores.html');
+  group.classList.add('tooltip');
+  const includePages = location.href.includes('/pages');
+  const path = 'contribuidores/contribuidores.html';
+  group.setAttribute('href', includePages ? `../${path}` : `./pages/${path}`);
   group.appendChild(document.createTextNode(developedBy.group));
 
   const groupTooltip = document.createElement('span');

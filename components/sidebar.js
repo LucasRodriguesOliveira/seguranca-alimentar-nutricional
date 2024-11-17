@@ -56,7 +56,7 @@ const createSidebarItem = (item, isRoot, isActiveMain) => {
   if (item.active) {
     path = '#';
   } else if (isRoot) {
-    path = `../../${item.path}`;
+    path = `/${item.path}`;
   } else if (isActiveMain) {
     path = `./pages/${item.path}/${item.path}.html`;
   } else {
