@@ -200,6 +200,8 @@ img {
   .wrapper {
     margin-inline: 0;
     padding-inline: 0;
+    max-height: 100dvh;
+    min-height: 80dvh;
   }
 
   .accordion {

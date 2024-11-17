@@ -23,35 +23,60 @@ section.contributors p {
   margin-top: 1.5rem;
   justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
+@media (max-width: 44.999rem) {
+  .card-container {
+    padding: 1rem 3rem;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .card-container {
+    padding: 1rem 1.5rem;
+    gap: 4rem;
+  }
+}
+
 .card {
-  display: inline-block;
-  padding: 0 25px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 50px;
+  display: flex;
+  align-items: center;
   border-radius: 25px;
   background-color: #f1f1f1;
   box-shadow: 2px 2px 6px rgba(0 0 0 / .15);
   text-decoration: none;
-  color: var(--text-primary);
-  transition: all .5s;
+  transition: all .3s;
+  padding: 0 1rem 0 0;
+  margin: 0 1rem;
 }
 
 .card .card-avatar {
-  float: left;
   margin: 0 10px 0 -25px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  transition: outline-width .3s ease-out;
+}
+
+.card .card-name {
+  color: var(--text-primary);
+  transition: color .5s;
 }
 
 .card:hover {
   background-color: var(--primary);
-  color: var(--background-secondary);
   transform: translate(-5%, -5%);
   box-shadow: 5px 5px 0 rgba(0 0 0 / .7);
+}
+
+.card:hover .card-avatar {
+  outline: 5px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.card:hover .card-name {
+  color: var(--background-secondary);
 }
