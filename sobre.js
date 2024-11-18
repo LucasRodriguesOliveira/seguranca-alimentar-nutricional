@@ -4,7 +4,7 @@ const APP_NAME = 'Segurança Alimentar';
 const breadcrumbPath = (title) => {
   return [
     {
-      label: 'Início',
+      label: 'Voltar',
       path: '../../index.html',
     },
     {

@@ -79,7 +79,7 @@ header .hero-banner {
 }
 
 header .title h2 {
-  color: var(--background-primary);
+  color: var(--primary);
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
