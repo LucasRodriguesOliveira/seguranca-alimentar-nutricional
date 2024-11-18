@@ -80,7 +80,13 @@ const contributorsData = [
       "avatar_url": "https://avatars.githubusercontent.com/u/149076908?v=4",
       "html_url": "https://github.com/ExportControl",
       "contributions": 1
-  }
+  },
+  {
+      "login": "ttorradaa2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/164096827?v=4",
+      "html_url": "https://github.com/ttorradaa2",
+      "contributions": 1
+  },
 ];
 
 window.addEventListener('load', async () => {
